@@ -1,0 +1,7 @@
+{
+  "srcFiles": ["./elements/input/0-background/**/*.svg"],
+  "outputDirectory": "./elements/output",
+  "fileName": "background",
+  "typeName": "background",
+  "prefix": "pixel"
+}

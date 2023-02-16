@@ -1,0 +1,637 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "ownerCandidate",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerUpdateInitiated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "confirmOwner",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "layer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getDetails",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getDetails",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getDetails",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getElement",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum IAssets.Tier",
+            "name": "tier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IPixelCharacter.Layer",
+            "name": "layer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "frame",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "traitName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "traitDescription",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IAssets.StatCategory",
+                "name": "category",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint8",
+                "name": "value",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct IAssets.Stat[]",
+            "name": "stats",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "svg",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IAssets.Element",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getElement",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum IAssets.Tier",
+            "name": "tier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IPixelCharacter.Layer",
+            "name": "layer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "frame",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "traitName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "traitDescription",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IAssets.StatCategory",
+                "name": "category",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint8",
+                "name": "value",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct IAssets.Stat[]",
+            "name": "stats",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "svg",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IAssets.Element",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getSVG",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getSVG",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IAssets.StatCategory",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IAssets.Stat[]",
+        "name": "stats",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IAssets.StatCategory",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IAssets.Stat[]",
+        "name": "stats",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "layer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IAssets.StatCategory",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IAssets.Stat[]",
+        "name": "stats",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getTier",
+    "outputs": [
+      {
+        "internalType": "enum IAssets.Tier",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwner",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum IAssets.Tier",
+            "name": "tier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IPixelCharacter.Layer",
+            "name": "layer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "frame",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "traitName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "traitDescription",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IAssets.StatCategory",
+                "name": "category",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint8",
+                "name": "value",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct IAssets.Stat[]",
+            "name": "stats",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "svg",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IAssets.Element",
+        "name": "element",
+        "type": "tuple"
+      }
+    ],
+    "name": "setElement",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      },
+      {
+        "internalType": "string",
+        "name": "svg_",
+        "type": "string"
+      }
+    ],
+    "name": "setSVG",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      },
+      {
+        "internalType": "string",
+        "name": "traitName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "traitDescription",
+        "type": "string"
+      }
+    ],
+    "name": "setTraitData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

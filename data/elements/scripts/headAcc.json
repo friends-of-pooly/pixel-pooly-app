@@ -1,0 +1,7 @@
+{
+  "srcFiles": ["./elements/input/6-headAcc/**/*.svg"],
+  "outputDirectory": "./elements/output",
+  "fileName": "headAcc",
+  "typeName": "headAcc",
+  "prefix": "pixel"
+}

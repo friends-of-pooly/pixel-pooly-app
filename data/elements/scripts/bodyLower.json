@@ -1,0 +1,7 @@
+{
+  "srcFiles": ["./elements/input/3-bodyLower/**/*.svg"],
+  "outputDirectory": "./elements/output",
+  "fileName": "bodyLower",
+  "typeName": "bodyLower",
+  "prefix": "pixel"
+}

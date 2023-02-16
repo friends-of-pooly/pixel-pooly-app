@@ -1,0 +1,7 @@
+{
+  "srcFiles": ["./elements/input/8-bodyAcc/**/*.svg"],
+  "outputDirectory": "./elements/output",
+  "fileName": "bodyAcc",
+  "typeName": "bodyAcc",
+  "prefix": "pixel"
+}

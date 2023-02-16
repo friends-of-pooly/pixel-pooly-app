@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<svg
+   width="320"
+   height="320"
+   viewBox="0 0 84.666665 84.666669"
+   version="1.1"
+   id="svg5"
+   shape-rendering="crispEdges"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <path
+     id="rect11190"
+     style="opacity:1;fill:#ffd800;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00157"
+     d="m 160,80 v 10 30 10 h 50 V 120 90 80 Z m 50,50 v 10 h 10 v -10 z m 10,10 v 70 h 10 v -70 z m 0,70 h -10 v 10 h 10 z m -10,10 h -10 v 10 h 10 z M 170,90 h 30 v 30 h -30 z"
+     transform="scale(0.26458333)" />
+  <path
+     id="rect11220"
+     style="opacity:1;fill:#00ebff;fill-opacity:0.5;fill-rule:evenodd;stroke-width:0.264999"
+     d="m 44.979168,23.8125 h 7.9375 V 31.75 h -7.9375 z" />
+</svg>

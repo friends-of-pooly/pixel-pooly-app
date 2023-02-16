@@ -1,0 +1,297 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getDetails",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getElement",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum IAssets.Tier",
+            "name": "tier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IPixelCharacter.Layer",
+            "name": "layer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "frame",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "traitName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "traitDescription",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IAssets.StatCategory",
+                "name": "category",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint8",
+                "name": "value",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct IAssets.Stat[]",
+            "name": "stats",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "svg",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IAssets.Element",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getElement",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum IAssets.Tier",
+            "name": "tier",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IPixelCharacter.Layer",
+            "name": "layer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "frame",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "traitName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "traitDescription",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum IAssets.StatCategory",
+                "name": "category",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint8",
+                "name": "value",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct IAssets.Stat[]",
+            "name": "stats",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "svg",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IAssets.Element",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getSVG",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getSVG",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "eid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IAssets.StatCategory",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IAssets.Stat[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IPixelCharacter.Layer",
+        "name": "layer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "frame",
+        "type": "uint8"
+      }
+    ],
+    "name": "getStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IAssets.StatCategory",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IAssets.Stat[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "srcFiles": ["./elements/input/7-faceAcc/**/*.svg"],
+  "outputDirectory": "./elements/output",
+  "fileName": "faceAcc",
+  "typeName": "faceAcc",
+  "prefix": "pixel"
+}
