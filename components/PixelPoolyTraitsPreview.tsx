@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { ERC721AttributesBoostNumbers, ERC721AttributesFilteredByTraitType } from '@turbo-eth/erc721-wagmi'
 import classNames from 'classnames'
-import { utils } from 'ethers'
+import { BigNumber, utils } from 'ethers'
 import { useNetwork } from 'wagmi'
 
 import { usePixelPoolyStorageConstructTokenUri, usePixelPoolyStorageFormatTraitsBytesFromCharacter } from '@/lib/blockchain'
@@ -44,7 +44,7 @@ export const PixelPoolyTraitsPreview = ({ className }: PixelPoolyTraitsPreviewPr
   const txRead = usePixelPoolyStorageConstructTokenUri({
     address: '0x8A791620dd6260079BF849Dc5567aDC3F2FdC318',
     chainId: chain?.id || 1,
-    args: [0, DEFAULT_ARGS, traitsFormatted.data],
+    args: [BigNumber.from(0), DEFAULT_ARGS as `0x${string}`, traitsFormatted.data as `0x${string}`],
   })
 
   const [attributes, setAttributes] = React.useState()
@@ -59,8 +59,6 @@ export const PixelPoolyTraitsPreview = ({ className }: PixelPoolyTraitsPreviewPr
       })()
     }
   }, [txRead.data])
-
-  console.log(txRead, ' txReadtxRead')
 
   if (!txRead?.data || !txRead?.isSuccess) return null
 

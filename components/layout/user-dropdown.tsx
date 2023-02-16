@@ -37,7 +37,7 @@ export default function UserDropdown() {
                 </div>
               </ButtonSIWELogin>
             </BranchIsAuthenticated>
-            <span onclick={connector?.disconnect} className="user-dropdown-menu-item">
+            <span onClick={connector?.disconnect} className="user-dropdown-menu-item">
               <BinaryIcon className="h-4 w-4" />
               <span className="text-sm">Wallet Disconnect</span>
             </span>

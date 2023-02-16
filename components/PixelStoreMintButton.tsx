@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 
 import classNames from 'clsx'
@@ -33,10 +34,7 @@ export const PixelStoreMintButton = ({ className, label = 'Mint' }: PixelStoreMi
       value: price?.data?.reduce((acc: BigNumber, val: BigNumber) => acc.add(val), BigNumber.from('0')),
     },
   })
-
-  console.log(data, 'data')
-
-  useAddMintedToken(data?.hash)
+  useAddMintedToken(data?.hash as string)
 
   const classes = classNames(className, 'PixelStoreMintButton', 'btn')
   return (

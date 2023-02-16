@@ -9,7 +9,7 @@ export function usePixelPoolyDecodeEvents(hash: string): any {
   const contractInterface = new utils.Interface(pixelPoolyABI)
 
   const { data, error, isSuccess, isError, isLoading } = useWaitForTransaction({
-    hash: hash,
+    hash: hash as `0x${string}`,
   })
 
   const [decodedEvents, setDecodedEvents] = useState<any>()

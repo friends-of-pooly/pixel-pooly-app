@@ -1,12 +1,11 @@
-const optionsBG = [
+export const optionsBG = [
   {
     tier: 0,
     layer: 0,
     frame: 0,
     expiry: 0,
     traitName: 'Sand',
-    traitDescription:
-      'Pooly likes to chill by feeling the sand between their toes.',
+    traitDescription: 'Pooly likes to chill by feeling the sand between their toes.',
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/0-background/bg-sand.svg',
   },
@@ -16,14 +15,13 @@ const optionsBG = [
     frame: 1,
     expiry: 0,
     traitName: 'Sky Blue',
-    traitDescription:
-      'Pooly soars through blue skies, practicing for their moonshot.',
+    traitDescription: 'Pooly soars through blue skies, practicing for their moonshot.',
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/0-background/bg-skyblue.svg',
   },
-];
+]
 
-const optionsBody = [
+export const optionsBody = [
   {
     tier: 0,
     layer: 1,
@@ -34,17 +32,16 @@ const optionsBody = [
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/1-body/body-pooly.svg',
   },
-];
+]
 
-const optionsHead = [
+export const optionsHead = [
   {
     tier: 0,
     layer: 2,
     frame: 0,
     expiry: 0,
     traitName: 'Pooly',
-    traitDescription:
-      'Sometimes a birb sitting is just hiding that the birb is standing at the ready.',
+    traitDescription: 'Sometimes a birb sitting is just hiding that the birb is standing at the ready.',
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/2-head/plain.svg',
   },
@@ -54,8 +51,7 @@ const optionsHead = [
     frame: 1,
     expiry: 0,
     traitName: 'Looking',
-    traitDescription:
-      'Keep them eyes peeled, looking all around for threats to quash.',
+    traitDescription: 'Keep them eyes peeled, looking all around for threats to quash.',
     stats: [{ categoryType: 'luck', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/2-head/head-looking.svg',
   },
@@ -65,8 +61,7 @@ const optionsHead = [
     frame: 2,
     expiry: 0,
     traitName: 'Shocked',
-    traitDescription:
-      'Shocked? As if, hyper focused, pupils pin-pointed, target locked.',
+    traitDescription: 'Shocked? As if, hyper focused, pupils pin-pointed, target locked.',
     stats: [{ categoryType: 'wisdom', value: 2 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/2-head/head-shooketh.svg',
   },
@@ -86,8 +81,7 @@ const optionsHead = [
     frame: 4,
     expiry: 0,
     traitName: 'OP Pirate',
-    traitDescription:
-      'Them pirates were onto something, switch patch sides, activate night-vision mode.',
+    traitDescription: 'Them pirates were onto something, switch patch sides, activate night-vision mode.',
     stats: [{ categoryType: 'defense', value: 2 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/2-head/head-OPpirate.svg',
   },
@@ -97,22 +91,20 @@ const optionsHead = [
     frame: 5,
     expiry: 0,
     traitName: 'OP Cooly',
-    traitDescription:
-      'Rose colored glasses? How about Optimistic colored glasses.',
+    traitDescription: 'Rose colored glasses? How about Optimistic colored glasses.',
     stats: [{ categoryType: 'constitution', value: 2 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/2-head/head-OPcooly.svg',
   },
-];
+]
 
-const optionsBodyLower = [
+export const optionsBodyLower = [
   {
     tier: 0,
     layer: 3,
     frame: 0,
     expiry: 0,
     traitName: 'None',
-    traitDescription:
-      'Sometimes a birb sitting is just hiding that the birb is standing at the ready.',
+    traitDescription: 'Sometimes a birb sitting is just hiding that the birb is standing at the ready.',
     stats: [],
     svg: '',
   },
@@ -126,9 +118,9 @@ const optionsBodyLower = [
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/3-feet/feet-sitting.svg',
   },
-];
+]
 
-const optionsLeft = [
+export const optionsLeft = [
   {
     tier: 0,
     layer: 4,
@@ -145,8 +137,7 @@ const optionsLeft = [
     frame: 1,
     expiry: 0,
     traitName: 'Wing',
-    traitDescription:
-      'For when Pooly is ready to fight, take flight, or flaunt.',
+    traitDescription: 'For when Pooly is ready to fight, take flight, or flaunt.',
     stats: [{ categoryType: 'agility', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/4-left/left-wing.svg',
   },
@@ -160,9 +151,9 @@ const optionsLeft = [
     stats: [{ categoryType: 'strength', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/4-left/left-wingtucked.svg',
   },
-];
+]
 
-const optionsRight = [
+export const optionsRight = [
   {
     tier: 0,
     layer: 5,
@@ -179,8 +170,7 @@ const optionsRight = [
     frame: 1,
     expiry: 0,
     traitName: 'Wing',
-    traitDescription:
-      'For when Pooly is ready to fight, take flight, or flaunt.',
+    traitDescription: 'For when Pooly is ready to fight, take flight, or flaunt.',
     stats: [{ categoryType: 'agility', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/5-right/right-wing.svg',
   },
@@ -194,9 +184,9 @@ const optionsRight = [
     stats: [{ categoryType: 'strength', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/5-right/right-wingtucked.svg',
   },
-];
+]
 
-const optionsHeadAcc = [
+export const optionsHeadAcc = [
   {
     tier: 0,
     layer: 6,
@@ -213,8 +203,7 @@ const optionsHeadAcc = [
     frame: 1,
     expiry: 0,
     traitName: 'Cap Blue',
-    traitDescription:
-      "Being a baller ain't easy work, but gettin' homeruns is.",
+    traitDescription: "Being a baller ain't easy work, but gettin' homeruns is.",
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/6-headAcc/hatAcc-cap-blue.svg',
   },
@@ -224,8 +213,7 @@ const optionsHeadAcc = [
     frame: 2,
     expiry: 0,
     traitName: 'Cap Green',
-    traitDescription:
-      "Being a baller ain't easy work, but gettin' homeruns is.",
+    traitDescription: "Being a baller ain't easy work, but gettin' homeruns is.",
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/6-headAcc/hatAcc-cap-green.svg',
   },
@@ -235,8 +223,7 @@ const optionsHeadAcc = [
     frame: 3,
     expiry: 0,
     traitName: 'Cap Orange',
-    traitDescription:
-      "Being a baller ain't easy work, but gettin' homeruns is.",
+    traitDescription: "Being a baller ain't easy work, but gettin' homeruns is.",
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/6-headAcc/hatAcc-cap-orange.svg',
   },
@@ -246,8 +233,7 @@ const optionsHeadAcc = [
     frame: 4,
     expiry: 0,
     traitName: 'Cap Red',
-    traitDescription:
-      "Being a baller ain't easy work, but gettin' homeruns is.",
+    traitDescription: "Being a baller ain't easy work, but gettin' homeruns is.",
     stats: [],
     svg: '/img/pixel-pooly-assets/SVG/beta/6-headAcc/hatAcc-cap-red.svg',
   },
@@ -257,8 +243,7 @@ const optionsHeadAcc = [
     frame: 5,
     expiry: 0,
     traitName: 'Giga Brain',
-    traitDescription:
-      'Make Pooly able to out-smart any obstacle in their path.',
+    traitDescription: 'Make Pooly able to out-smart any obstacle in their path.',
     stats: [
       { categoryType: 'wisdom', value: 1 },
       { categoryType: 'luck', value: 1 },
@@ -271,8 +256,7 @@ const optionsHeadAcc = [
     frame: 6,
     expiry: 0,
     traitName: 'King',
-    traitDescription:
-      'The power of Pooly is having the royal guard on the right side.',
+    traitDescription: 'The power of Pooly is having the royal guard on the right side.',
     stats: [
       { categoryType: 'defense', value: 2 },
       { categoryType: 'strength', value: 1 },
@@ -295,17 +279,16 @@ const optionsHeadAcc = [
     frame: 8,
     expiry: 0,
     traitName: 'Top Hat',
-    traitDescription:
-      'With this top hat, Pooly is one step closer to being Tuxedo Mask.',
+    traitDescription: 'With this top hat, Pooly is one step closer to being Tuxedo Mask.',
     stats: [
       { categoryType: 'charisma', value: 1 },
       { categoryType: 'luck', value: 1 },
     ],
     svg: '/img/pixel-pooly-assets/SVG/beta/6-headAcc/hatAcc-tophat.svg',
   },
-];
+]
 
-const optionsFaceAcc = [
+export const optionsFaceAcc = [
   {
     tier: 0,
     layer: 7,
@@ -322,17 +305,16 @@ const optionsFaceAcc = [
     frame: 1,
     expiry: 0,
     traitName: 'Bubble Pipe',
-    traitDescription:
-      'Hide Pooly in a cloud of bubbles to escape from prying eyes.',
+    traitDescription: 'Hide Pooly in a cloud of bubbles to escape from prying eyes.',
     stats: [
       { categoryType: 'charisma', value: 1 },
       { categoryType: 'agility', value: 1 },
     ],
     svg: '/img/pixel-pooly-assets/SVG/beta/7-faceAcc/faceAcc-bubblepipe.svg',
   },
-];
+]
 
-const optionsBodyAcc = [
+export const optionsBodyAcc = [
   {
     tier: 0,
     layer: 8,
@@ -349,8 +331,7 @@ const optionsBodyAcc = [
     frame: 1,
     expiry: 0,
     traitName: 'Green DeFi Shirt',
-    traitDescription:
-      "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
+    traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [{ categoryType: 'constitution', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/8-bodyAcc/bodyAcc-defishirt-green.svg',
   },
@@ -360,8 +341,7 @@ const optionsBodyAcc = [
     frame: 2,
     expiry: 0,
     traitName: 'Navy DeFi Shirt',
-    traitDescription:
-      "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
+    traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [{ categoryType: 'constitution', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/8-bodyAcc/bodyAcc-defishirt-navy.svg',
   },
@@ -371,8 +351,7 @@ const optionsBodyAcc = [
     frame: 3,
     expiry: 0,
     traitName: 'Orange DeFi Shirt',
-    traitDescription:
-      "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
+    traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [{ categoryType: 'constitution', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/8-bodyAcc/bodyAcc-defishirt-orange.svg',
   },
@@ -382,8 +361,7 @@ const optionsBodyAcc = [
     frame: 4,
     expiry: 0,
     traitName: 'Red DeFi Shirt',
-    traitDescription:
-      "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
+    traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [{ categoryType: 'constitution', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/8-bodyAcc/bodyAcc-defishirt-red.svg',
   },
@@ -452,9 +430,9 @@ const optionsBodyAcc = [
     ],
     svg: '/img/pixel-pooly-assets/SVG/beta/8-bodyAcc/bodyAcc-poolychain.svg',
   },
-];
+]
 
-const optionsBodyLowerAcc = [
+export const optionsBodyLowerAcc = [
   {
     tier: 0,
     layer: 9,
@@ -465,9 +443,9 @@ const optionsBodyLowerAcc = [
     stats: [],
     svg: '',
   },
-];
+]
 
-const optionsLeftWingAcc = [
+export const optionsLeftWingAcc = [
   {
     tier: 0,
     layer: 10,
@@ -484,8 +462,7 @@ const optionsLeftWingAcc = [
     frame: 1,
     expiry: 0,
     traitName: 'Blue Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little blue umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little blue umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-blue.svg',
   },
@@ -495,8 +472,7 @@ const optionsLeftWingAcc = [
     frame: 2,
     expiry: 0,
     traitName: 'Green Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little green umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little green umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-green.svg',
   },
@@ -506,8 +482,7 @@ const optionsLeftWingAcc = [
     frame: 3,
     expiry: 0,
     traitName: 'Orange Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little orange umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little orange umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-orange.svg',
   },
@@ -517,8 +492,7 @@ const optionsLeftWingAcc = [
     frame: 4,
     expiry: 0,
     traitName: 'Pink Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little pink umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little pink umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-pink.svg',
   },
@@ -528,8 +502,7 @@ const optionsLeftWingAcc = [
     frame: 5,
     expiry: 0,
     traitName: 'Purple Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little purple umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little purple umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-purple.svg',
   },
@@ -539,8 +512,7 @@ const optionsLeftWingAcc = [
     frame: 6,
     expiry: 0,
     traitName: 'Red Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little red umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little red umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-umbrella-red.svg',
   },
@@ -550,8 +522,7 @@ const optionsLeftWingAcc = [
     frame: 7,
     expiry: 0,
     traitName: 'Glitzy Cane',
-    traitDescription:
-      'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
+    traitDescription: 'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
     stats: [
       { categoryType: 'charisma', value: 1 },
       { categoryType: 'luck', value: 1 },
@@ -584,9 +555,9 @@ const optionsLeftWingAcc = [
     ],
     svg: '/img/pixel-pooly-assets/SVG/beta/10-leftWingAcc/leftWingAcc-gavel.svg',
   },
-];
+]
 
-const optionsRightWingAcc = [
+export const optionsRightWingAcc = [
   {
     tier: 0,
     layer: 11,
@@ -603,8 +574,7 @@ const optionsRightWingAcc = [
     frame: 1,
     expiry: 0,
     traitName: 'Blue Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little blue umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little blue umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-blue.svg',
   },
@@ -614,8 +584,7 @@ const optionsRightWingAcc = [
     frame: 2,
     expiry: 0,
     traitName: 'Green Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little green umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little green umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-green.svg',
   },
@@ -625,8 +594,7 @@ const optionsRightWingAcc = [
     frame: 3,
     expiry: 0,
     traitName: 'Orange Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little orange umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little orange umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-orange.svg',
   },
@@ -636,8 +604,7 @@ const optionsRightWingAcc = [
     frame: 4,
     expiry: 0,
     traitName: 'Pink Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little pink umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little pink umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-pink.svg',
   },
@@ -647,8 +614,7 @@ const optionsRightWingAcc = [
     frame: 5,
     expiry: 0,
     traitName: 'Purple Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little purple umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little purple umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-purple.svg',
   },
@@ -658,8 +624,7 @@ const optionsRightWingAcc = [
     frame: 6,
     expiry: 0,
     traitName: 'Red Umbrella',
-    traitDescription:
-      'Protect Pooly, rain or shine, with this handy, little red umbrella.',
+    traitDescription: 'Protect Pooly, rain or shine, with this handy, little red umbrella.',
     stats: [{ categoryType: 'defense', value: 1 }],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-umbrella-red.svg',
   },
@@ -669,8 +634,7 @@ const optionsRightWingAcc = [
     frame: 7,
     expiry: 0,
     traitName: 'Glitzy Cane',
-    traitDescription:
-      'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
+    traitDescription: 'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
     stats: [
       { categoryType: 'charisma', value: 1 },
       { categoryType: 'luck', value: 1 },
@@ -703,4 +667,4 @@ const optionsRightWingAcc = [
     ],
     svg: '/img/pixel-pooly-assets/SVG/beta/11-rightWingAcc/rightWingAcc-gavel.svg',
   },
-];
+]

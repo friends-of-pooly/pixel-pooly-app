@@ -32,7 +32,7 @@ export const MenuDashboardBuilder = ({ className }: MenuDashboardBuilderProps) =
             <h3 className="text-3xl font-bold">{item.headerLabel}</h3>
             <Separator className="my-3 bg-yellow-300" />
             <div className="flex  flex-col">
-              {item.items.map((action, index) => {
+              {item.items.map((action: any, index: number) => {
                 return <MenuItem key={index} layer={action.layer} {...action} />
               })}
             </div>

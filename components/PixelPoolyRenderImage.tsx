@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import classNames from 'clsx'
 
-import { findImageFromLayerAndFrame, itemList } from '@/data/itemList'
+import { findImageFromLayerAndFrame } from '@/data/itemList'
 
 interface PixelPoolyRenderImageProps {
   className?: string
@@ -10,13 +10,10 @@ interface PixelPoolyRenderImageProps {
   frame: number
 }
 
-console.log(itemList, 'itemListitemList')
-
 export const PixelPoolyRenderImage = ({ className, layer, frame }: PixelPoolyRenderImageProps) => {
   const classes = classNames(className, 'PixelPoolyRenderImage')
   const image = findImageFromLayerAndFrame(layer, frame)
 
-  console.log(image, 'imageimage')
   return (
     <svg
       width="100"

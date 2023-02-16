@@ -1,6 +1,5 @@
+// @ts-nocheck
 'use client'
-
-import { useEffect, useState } from 'react'
 
 import PixelPoolyRenderImage from '@/components/PixelPoolyRenderImage'
 import PixelPoolyTraitsBoostedPreview from '@/components/PixelPoolyTraitsBoostedPreview'
@@ -8,18 +7,16 @@ import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { useERC721TokenURIFormatted } from '@/hooks/use-erc721-token-uri-formatted'
 import { usePixelPoolyStorageGetCharacter } from '@/lib/blockchain'
 
-export default function Home({ params }) {
+export default function Home({ params }: any) {
   const contract = useContractAutoLoad('PixelPooly')
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
 
-  const { data, isSuccess } = useERC721TokenURIFormatted(contract?.address, params?.id)
+  const { data } = useERC721TokenURIFormatted(contract?.address, params?.id)
 
   const { data: data2, isSuccess: isSuccess2 } = usePixelPoolyStorageGetCharacter({
     address: contractStorage?.address,
     args: [params?.id],
   })
-
-  console.log(data2, 'data2')
 
   return (
     <div className="container">
@@ -37,7 +34,7 @@ export default function Home({ params }) {
         <div className="col-span-12 lg:col-span-8">
           <div className="grid grid-cols-12 gap-4">
             {data2?.map((frame, layer) => (
-              <PixelPoolyRenderImage layer={layer} frame={frame} />
+              <PixelPoolyRenderImage key={layer} layer={layer} frame={frame} />
             ))}
           </div>
         </div>

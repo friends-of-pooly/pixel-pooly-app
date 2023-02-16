@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 
+import { BigNumber } from 'ethers'
+
 import { usePixelPoolyTokenUri } from '@/lib/blockchain'
 
 export const useERC721TokenURIFormatted = (contractAddress: string, id: string) => {
   const { data, ...rest } = usePixelPoolyTokenUri({
-    address: contractAddress,
-    args: [id],
+    address: contractAddress as `0x${string}`,
+    args: [BigNumber.from(id)],
   })
 
   const [attributes, setAttributes] = useState()

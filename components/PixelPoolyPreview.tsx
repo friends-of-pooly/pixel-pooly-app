@@ -17,7 +17,9 @@ export const PixelPoolyPreview = ({ className }: PixelPoolyPreviewProps) => {
   const txRead = usePixelPoolyRenderPreview({
     address: '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
     chainId: chain?.id || 1,
-    args: [utils.solidityPack(['uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8'], data)],
+    args: [
+      utils.solidityPack(['uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8'], data),
+    ] as any,
   })
 
   const [img, setImg] = React.useState<string>()
@@ -28,7 +30,7 @@ export const PixelPoolyPreview = ({ className }: PixelPoolyPreviewProps) => {
   }, [txRead.data])
 
   const classes = classNames(className, 'PixelPoolyPreview')
-  return <img className={classes} src={img} />
+  return <img className={classes} src={img} alt="PixelPooly Preview" />
 }
 
 export default PixelPoolyPreview
