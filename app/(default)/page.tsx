@@ -21,7 +21,7 @@ export default function Home() {
       <div className={classes}>
         <Image src="/img/dome-grid.svg" alt="Dome Grid" layout="fill" objectFit="cover" objectPosition="center" quality={100} priority />
       </div>
-      <div className="relative flex flex-1">
+      <div className="relative flex flex-1 pt-12 lg:pt-32">
         <div className="flex-center flex h-full flex-1 flex-col items-center justify-center text-center">
           <motion.div
             className="max-w-5xl px-5 xl:px-0"
