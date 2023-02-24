@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7" height="9.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 7 9.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m4 5e-3h3m-6 1h6m-6 1h3m1 0h1m-4 1h1m-2 1h2" stroke="#7124ee"/>
+  <path d="m0 2.005h1m-1 1h1m3 0h1m-5 1h1m2 0h1m-4 1h1m1 0h1m-2 1h1" stroke="#6514dd"/>
+  <path d="m4 2.005h1" stroke="#7024ee"/>
+  <path d="m1 3.005h1" stroke="#7124ef"/>
+  <path d="m3 3.005h1m-3 2h1" stroke="#7125ee"/>
+  <path d="m3 5.005h1" stroke="#5518ae"/>
+  <path d="m0 6.005h1" stroke="#6515dd"/>
+  <path d="m2 6.005h1m-3 1h2m-2 1h1" stroke="#5519ae"/>
+ </g>
+</svg>

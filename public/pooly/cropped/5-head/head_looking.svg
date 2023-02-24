@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22" height="19.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 22 19.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m2 5e-3h1m0 1h1m1 1h1m1 0h2m1 0h6m1 0h1m-17 1h1m6 0h9m1 0h2m-18 1h13m1 0h5m-21 1h1m5 0h1m1 0h8m1 0h4m-20 1h8m4 0h2m5 0h1m-18 1h5m5 0h3m4 0h1m-14 1h2m4 0h3m4 0h1m-14 1h2m4 0h3m4 0h1m-14 1h2m4 0h3m4 0h1m-14 1h2m5 0h2m-9 1h4m1 0h9m-14 1h2m1 0h2m8 0h1m-14 1h5m7 0h2m-13 1h4m8 0h1m-13 1h2m1 0h4m5 0h1" stroke="#7124ee"/>
+  <path d="m3 2.005h1m1 1h1m-2 2h1m-3 2h1m3 1h1m2 3h1m1 0h2m4 0h3m-13 4h1m-1 1h1m-1 1h5m2 0h4m1 0h1" stroke="#6514dd"/>
+  <path d="m4 2.005h1m2 1h1m-3 2h1m2 2h1m2 5h1m-3 1h1" stroke="#7125ee"/>
+  <path d="m6 2.005h1" stroke="#7024ef"/>
+  <path d="m9 2.005h1m7 1h1m-11 2h1m12 6h1m-11 5h1" stroke="#7124ef"/>
+  <path d="m16 2.005h1m-11 1h1m13 0h1m-6 1h1m-1 2h1m-3 5h1m5 2h1" stroke="#7024ee"/>
+  <path d="m4 3.005h1m-2 2h1m17 1h1m-1 1h1m-19 1h3m15 0h1m-1 1h1m-16 1h1m14 0h1m-16 1h1m14 0h1m-16 1h1m14 0h1m-1 1h1m-16 1h1m14 0h1m-13 4h10" stroke="#5519ae"/>
+  <path d="m16 5.005h1" stroke="#7025ee"/>
+  <path d="m9 6.005h1m6 0h1m-8 1h1m6 0h1m-8 1h2m5 0h2m-8 1h1m5 0h2m-8 1h1m5 0h2" stroke="#cedef6"/>
+  <path d="m10 6.005h1m6 0h1" stroke="#c4e5f8"/>
+  <path d="m11 6.005h2m5 0h2m-8 1h1m5 0h2m-8 1h1m5 0h2m-9 1h2m5 0h2m-9 1h1m7 0h1" stroke="#000049"/>
+  <path d="m10 7.005h1m6 0h1" stroke="#def0fb"/>
+  <path d="m11 7.005h1m0 3h1m5 0h1" stroke="#000149"/>
+  <path d="m11 8.005h1" stroke="#010049"/>
+  <path d="m6 9.005h1m-1 4h1" stroke="#5518ae"/>
+  <path d="m9 9.005h1m-1 1h1" stroke="#cedef7"/>
+  <path d="m10 11.005h1" stroke="#6515dc"/>
+  <path d="m16 11.005h1m-5 6h1m5 0h1m1 0h1" stroke="#6514dc"/>
+  <path d="m12 13.005h1m1 0h3m-4 1h2m1 0h1m-2 1h5m-3 1h3" stroke="#ff7f08"/>
+  <path d="m13 13.005h1" stroke="#ff7e08"/>
+  <path d="m17 13.005h2" stroke="#ff9112"/>
+  <path d="m12 14.005h1" stroke="#f26c00"/>
+  <path d="m15 14.005h1" stroke="#a7421c"/>
+  <path d="m17 14.005h1" stroke="#a7431c"/>
+  <path d="m18 14.005h1" stroke="#fe7f09"/>
+  <path d="m12 15.005h1" stroke="#6515dd"/>
+  <path d="m13 15.005h2m1 1h1" stroke="#f26d00"/>
+  <path d="m15 16.005h1" stroke="#f26d01"/>
+  <path d="m13 17.005h1" stroke="#6414dc"/>
+ </g>
+</svg>

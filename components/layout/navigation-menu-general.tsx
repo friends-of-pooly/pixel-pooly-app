@@ -21,45 +21,13 @@ const partners: { title: string; href: string; description: string }[] = [
   {
     title: 'PoolTogether',
     href: '/partner/pooltogether',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
+    description: 'PoolTogether is a crypto-powered savings protocol based on Premium Bonds. Save money and have a chance to win every day.',
   },
   {
     title: 'Lobby3',
     href: '/partner/lobby3',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-]
-
-const quests: { title: string; href: string; description: string }[] = [
-  {
-    title: 'Feature',
-    href: '/feature/dynamic-nft',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-  {
-    title: 'Contribute',
-    href: '/quest/test',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-  {
-    title: 'Quest 3',
-    href: '/quest/test-kit',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-  {
-    title: 'Quest 4',
-    href: '/quest/test',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-  {
-    title: 'Quest 5',
-    href: '/quest/test',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
-  },
-  {
-    title: 'Quest 6',
-    href: '/quest/test',
-    description: 'Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.',
+    description:
+      'Lobby3 is a new Web3 community designed to give the people a stronger voice in Washington, DC — so we can build a more prosperous economic future together.',
   },
 ]
 
@@ -73,24 +41,27 @@ export function NavigationMenuGeneral() {
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <LinkComponent
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-indigo-500 to-purple-700 p-6 no-underline outline-none focus:shadow-md"
-                    href="/poolyverse">
-                    <div className="mt-4 mb-2 text-lg font-medium text-white">Pooly</div>
+                  <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-indigo-500 to-purple-700 p-6 no-underline outline-none focus:shadow-md">
+                    <div className="mt-4 mb-2 text-lg font-medium text-white">Pooly Pals Universe</div>
                     <p className="text-sm leading-tight text-white/90">
-                      The most adorable NFT on the internet with a purpose is on a mission to defend DeFi and secure an Open Web3.
+                      Friends of Pooly is on a mission to defend decentralized finance; and to secure an Open Web3 through the power of Community.
                     </p>
-                  </LinkComponent>
+                  </div>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/poolyverse" title="Defending DeFi">
-                <p className="">Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.</p>
+              <ListItem href="/poolyverse/constitution" title="Open Web3 Constitution">
+                <p className="">
+                  We the People of the Web3 Network State stand firmly for an open, secure and neutral Web3; protecting foundational digital rights
+                  like ownership, privacy and accessibility.
+                </p>
               </ListItem>
-              <ListItem href="/poolyverse" title="Securing an Open Web3">
-                <p className="">Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.</p>
+              <ListItem href="/poolyverse/defender-sdk" title="Defender SDK">
+                <p className="">Friends of Pooly is developing a DeFiDefender SDK - powering Web3 native grassroots organizing.</p>
               </ListItem>
-              <ListItem href="/poolyverse" title="A Bigger Purpose">
-                <p className="">Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.</p>
+              <ListItem href="/poolyverse/pixel-store" title="Pixel Stores">
+                <p className="">
+                  As the Pooly Pal family grows, we will be opening up Pixel Stores for Pooly Pals to sell their NFTs and earn a commission.
+                </p>
               </ListItem>
             </ul>
           </NavigationMenuContent>

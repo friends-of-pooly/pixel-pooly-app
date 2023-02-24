@@ -31,7 +31,7 @@ export function useContractAutoLoad(contract: string, chainId?: number): any {
           throw new Error(`Unknown contract ${contract}`)
       }
     default:
-      throw new Error(`Unknown network ${chain?.id}`)
+    // throw new Error(`Unknown network ${chain?.id}`)
   }
 }
 

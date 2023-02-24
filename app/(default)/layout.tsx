@@ -10,7 +10,7 @@ export default function RootLayout({ children }: any) {
     <>
       <div className={classes}>
         <Header />
-        <main className="my-32 flex flex-1 flex-col md:px-10 lg:my-20 lg:py-14">{children}</main>
+        <main className="my-32 flex flex-1 flex-col md:px-0 lg:my-20 lg:py-0">{children}</main>
         <Footer />
       </div>
       <section className="bg-gradient-color fixed inset-x-0 bottom-0 z-50 flex justify-center p-2 px-6">
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: any) {
           are teaming up to <span className="font-bold">#DefendDeFi</span> and secure an Open Web3{' '}
         </span>
         <span className="mx-3">🛡</span>
-        <LinkComponent className="font-bold" href="https://friendsofpooly.com/">
+        <LinkComponent className="font-bold" href="/season-1">
           Learn More
         </LinkComponent>
       </section>

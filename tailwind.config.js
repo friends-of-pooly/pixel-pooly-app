@@ -22,6 +22,12 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        washingtonSteps: "url('/story/washington-steps.png')",
+        constitution: "url('/story/washington-night.png')",
+        'defender-sdk': "url('/story/shield-field.png')",
+        'pixel-store': "url('/story/pixel-store.png')",
+      },
       fontFamily: {
         default: ['var(--inter-font)', 'system-ui', 'sans-serif'],
         primary: ['var(--raleway-font)', 'system-ui', 'sans-serif'],

@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
 
 // @ts-ignore
+import { useColorMode } from '@/lib/state'
 import MoonIcon from 'public/icons/MoonIcon.svg?icon'
 // @ts-ignore
 import SunIcon from 'public/icons/SunIcon.svg?icon'
-
-import { useColorMode } from '@/lib/state'
 
 export function ThemeSwitcher() {
   const classes = 'cursor-pointer'

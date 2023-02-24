@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3" height="9.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 3 9.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m1 5e-3h2m-3 1h2m-2 1h2m-2 1h1m-1 1h1" stroke="#7124ee"/>
+  <path d="m2 1.005h1m-1 1h1m-2 1h2m-2 1h1m-1 1h1m-1 1h1m-1 1h1m0 1h1" stroke="#6514dd"/>
+  <path d="m2 4.005h1m-1 1h1m-1 1h1m-1 1h1" stroke="#5519ae"/>
+  <path d="m0 5.005h1" stroke="#7124ef"/>
+ </g>
+</svg>

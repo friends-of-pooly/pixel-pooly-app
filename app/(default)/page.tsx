@@ -3,7 +3,6 @@
 import classNames from 'clsx'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { FaGithub } from 'react-icons/fa'
 import Balancer from 'react-wrap-balancer'
 
 import Card from '@/components/shared/card'
@@ -56,7 +55,13 @@ export default function Home() {
       <section className="relative flex flex-1 flex-col lg:mt-32">
         <div className="container grid max-w-screen-xl grid-cols-12 gap-10 lg:mt-20">
           <div className="col-span-12 md:col-span-6">
-            <Image className="w-full" src="https://via.placeholder.com/600x380" alt="Pixel Pooly" width={600} height={380} />
+            <Image
+              className="w-full rounded-lg border-4 shadow-xl"
+              src="/story/pixel-waashington-computer.png"
+              alt="Pixel Pooly"
+              width={600}
+              height={600}
+            />
           </div>
           <div className="content col-span-12 flex flex-col justify-center md:col-span-6">
             <div className="my-3">
@@ -81,6 +86,76 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="relative flex flex-1 flex-col lg:mt-32">
+        <div className="container grid max-w-screen-lg grid-cols-12 gap-10 lg:mt-20 lg:gap-y-32">
+          <div className="col-span-12 md:col-span-6">
+            <Image
+              className="w-full rounded-lg border-4 shadow-xl"
+              src="/story/washington-shield-stand.png"
+              alt="Defending DeFi"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="col-span-12 flex flex-col justify-center md:col-span-6">
+            <div className="my-3">
+              <h3 className="mb-2 text-5xl font-semibold">Defending DeFi</h3>
+              <h3 className="mb-2 text-2xl font-normal">Uniting the Web3 Community</h3>
+              <p className="text-lg leading-8">
+                Nulla viverra faucibus hendrerit. Proin vel elit imperdiet, venenatis elit sed, tincidunt magna. Etiam sed dapibus risus, vel laoreet
+                tortor. Pellentesque lobortis auctor eros, id tristique lectus vestibulum tempor.{' '}
+              </p>
+              <LinkComponent className="text-gradient-primary mt-4 block text-lg font-bold" href="/guide">
+                Learn More
+              </LinkComponent>
+            </div>
+          </div>
+          <div className="lg col-span-12 md:col-span-6 lg:order-4">
+            <Image
+              className="w-full rounded-lg border-4 shadow-xl"
+              src="/story/pixel-washington-night.png"
+              alt="Washington D.C. Night Connections"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="col-span-12 flex flex-col justify-center md:col-span-6 lg:order-3">
+            <div className="my-3">
+              <h3 className="mb-2 text-5xl font-semibold">Open Web3</h3>
+              <h3 className="mb-2 text-2xl font-normal">Advocating for a Neutral Internet</h3>
+              <p className="text-lg leading-8">
+                Nulla viverra faucibus hendrerit. Proin vel elit imperdiet, venenatis elit sed, tincidunt magna. Etiam sed dapibus risus, vel laoreet
+                tortor. Pellentesque lobortis auctor eros, id tristique lectus vestibulum tempor.{' '}
+              </p>
+              <LinkComponent className="text-gradient-primary mt-4 block text-lg font-bold" href="/guide">
+                Learn More
+              </LinkComponent>
+            </div>
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:order-5">
+            <Image
+              className="w-full rounded-lg border-4 shadow-xl"
+              src="/story/pixel-wallet-info.png"
+              alt="Defending DeFi"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="col-span-12 flex flex-col justify-center md:col-span-6 lg:order-6">
+            <div className="my-3">
+              <h3 className="mb-2 text-5xl font-semibold">Education &amp; Values </h3>
+              <h3 className="mb-2 text-2xl font-normal">EVM Storage Proofs</h3>
+              <p className="text-lg leading-8">
+                Nulla viverra faucibus hendrerit. Proin vel elit imperdiet, venenatis elit sed, tincidunt magna. Etiam sed dapibus risus, vel laoreet
+                tortor. Pellentesque lobortis auctor eros, id tristique lectus vestibulum tempor.{' '}
+              </p>
+              <LinkComponent className="text-gradient-primary mt-4 block text-lg font-bold" href="/guide">
+                Learn More
+              </LinkComponent>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="relative flex flex-1 flex-col lg:mt-32">
         <div className="flex-center flex h-full flex-1 flex-col items-center justify-center text-center">
           <motion.div
@@ -120,6 +195,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <section className="relative flex flex-1 flex-col bg-washingtonSteps bg-cover bg-center lg:mt-32 lg:min-h-[620px]">yo</section>
     </>
   )
 }

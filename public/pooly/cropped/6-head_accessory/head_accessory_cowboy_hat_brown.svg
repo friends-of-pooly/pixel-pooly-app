@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="9.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 24 9.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m7 5e-3h4m-5 1h1m5 0h2m-8 1h2m6 0h1m7 0h1m-22 1h1m5 0h3m12 0h1m-22 1h1m4 0h6m6 0h1m2 0h2m-21 1h2m2 0h13m1 0h2m-21 1h1m1 0h2m3 0h3m1 0h6" stroke="#a9693b"/>
+  <path d="m11 5e-3h3m0 1h2m-1 1h2m4 1h1m-20 1h1m2 1h1m13 0h1m2 0h2m-19 1h3m10 0h4m-20 1h19m-14 1h6m1 0h5" stroke="#955d34"/>
+  <path d="m14 5e-3h1m-2 8h1" stroke="#955c34"/>
+  <path d="m15 5e-3h2m-9 1h3m6 0h1m-10 1h6m3 0h1m5 0h1m-24 1h1m9 0h5m1 0h1m6 0h1m-24 1h1m13 0h2" stroke="#c48456"/>
+  <path d="m7 1.005h1m7 2h1" stroke="#c58456"/>
+  <path d="m11 1.005h1m5 2h1m-6 1h1m4 0h1" stroke="#a9683b"/>
+  <path d="m16 1.005h1" stroke="#c58457"/>
+  <path d="m18 2.005h1m-14 1h1m13 0h1m-15 1h1m13 0h1" stroke="#664832"/>
+  <path d="m4 3.005h1" stroke="#7e5536"/>
+  <path d="m6 3.005h1m11 0h1m-18 2h1m9 1h1" stroke="#a9693a"/>
+  <path d="m20 3.005h1m-18 1h2m-1 1h1" stroke="#7e5537"/>
+  <path d="m13 4.005h1" stroke="#c48457"/>
+  <path d="m16 4.005h1m6 0h1m-24 1h1m1 1h1" stroke="#a8693b"/>
+  <path d="m20 4.005h1" stroke="#7f5537"/>
+  <path d="m22 6.005h1" stroke="#955d35"/>
+ </g>
+</svg>

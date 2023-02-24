@@ -1,4 +1,3 @@
-// @ts-nocheck
 import * as React from 'react'
 
 import classNames from 'clsx'
@@ -19,21 +18,22 @@ export const PixelStoreMintButton = ({ className, label = 'Mint' }: PixelStoreMi
   const { address } = useAccount()
   const [itemSelection] = usePixelPoolyBuilder()
 
-  const contract = useContractAutoLoad('PixelUniverse', 31337)
-  const contractStore = useContractAutoLoad('PixelStore', 31337)
+  const contract = useContractAutoLoad('PixelUniverse')
+  const contractStore = useContractAutoLoad('PixelStore')
 
   const price = usePixelStoreGetFramePrices({
     address: contractStore.address,
     args: [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], itemSelection],
   })
 
-  const { write, data } = usePixelUniverseMintWithFrames({
+  const { write, data, error } = usePixelUniverseMintWithFrames({
     address: contract.address,
     args: [address, itemSelection],
     overrides: {
       value: price?.data?.reduce((acc: BigNumber, val: BigNumber) => acc.add(val), BigNumber.from('0')),
     },
   })
+
   useAddMintedToken(data?.hash as string)
 
   const classes = classNames(className, 'PixelStoreMintButton', 'btn')

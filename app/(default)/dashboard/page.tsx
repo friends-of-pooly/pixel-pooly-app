@@ -11,7 +11,7 @@ import PixelStoreMintPriceSplit from '@/components/PixelStoreMintPriceSplit'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { DialogHeader } from '@/components/ui/dialog'
 import { Separator } from '@/components/ui/separator'
-import pixelPoolyItems from '@/config/pixel-pooly-items'
+import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
 
 export default function Home() {
   return (

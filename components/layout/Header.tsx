@@ -52,11 +52,8 @@ export function Header(props: Props) {
       </div>
 
       <div className="flex items-center gap-4">
-        <LinkComponent className="flex items-center" href="/analytics">
-          Analytics
-        </LinkComponent>
         <LinkComponent className="flex items-center" href="/dashboard">
-          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Pixel Pooly</button>
+          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Enter App</button>
         </LinkComponent>
         <BranchIsWalletConnected>
           <UserDropdown />

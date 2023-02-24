@@ -14,17 +14,7 @@ export const PixelPoolyRenderImage = ({ className, layer, frame }: PixelPoolyRen
   const classes = classNames(className, 'PixelPoolyRenderImage')
   const image = findImageFromLayerAndFrame(layer, frame)
 
-  return (
-    <svg
-      width="100"
-      height="100"
-      viewBox="0 0 84.667 84.667"
-      shapeRendering="crispEdges"
-      xmlns="http://www.w3.org/2000/svg"
-      className="mx-auto"
-      dangerouslySetInnerHTML={{ __html: image?.SVG }}
-    />
-  )
+  return <img src={image?.croppedSVG} className={classes} alt={image?.traitName} />
 }
 
 export default PixelPoolyRenderImage

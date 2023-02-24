@@ -65,7 +65,7 @@ export const PixelPoolyTraitsBoostedPreview = ({ className }: PixelPoolyTraitsBo
     <>
       <ERC721AttributesBoostNumbers
         attributes={attributes}
-        className="grid grid-cols-12 gap-y-2 text-white"
+        className="grid grid-cols-12 gap-y-2"
         classNameItem="flex justify-between items-center px-1 rounded-md col-span-12"
         classNameLabel="text-"
         classNameValue="text- font-semibold"

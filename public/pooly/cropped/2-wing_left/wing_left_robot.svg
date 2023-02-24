@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8" height="9.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 8 9.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m0 5e-3h2m-2 1h3m-2 1h3m0 1h1m1 0h2m-3 1h2m-1 1h2" stroke="#858585"/>
+  <path d="m2 5e-3h2m-1 1h4m-2 1h2" stroke="#a8a8a8"/>
+  <path d="m4 2.005h1m0 1h1" stroke="#848585"/>
+  <path d="m7 2.005h1m-1 2h1m-4 1h1m2 1h1m-1 2h1" stroke="#636363"/>
+  <path d="m3 3.005h1m0 1h1m0 2h2m0 1h1" stroke="#767676"/>
+  <path d="m5 5.005h1" stroke="#777676"/>
+  <path d="m6 7.005h1" stroke="#626363"/>
+ </g>
+</svg>

@@ -35,10 +35,12 @@ export const PixelPoolyLayerFrameList = ({ className, items, layer }: PixelPooly
             'bg-gradient-color': _data[layer] == item.frame,
           }
         )
+
         return (
           <div onClick={() => handleSetLayerFrame(item.frame)} key={index} className={itemClasses}>
             <div className="flex-center col-span-4 flex ">
               <span className="item-preview">
+                <img src={item.croppedSVG} className="h-20 w-20" />
                 <svg
                   width="100"
                   height="100"

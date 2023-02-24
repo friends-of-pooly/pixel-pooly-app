@@ -1,0 +1,79 @@
+const optionsBG = [
+   { tier: 1, layer: 0, frame: 0, expiry: 0, traitName: "bg_beach.svg", traitDescription: "Pooly relaxes on the beach when they can.", stats: [{ categoryType: "luck", value: 1,}], svg: "/pixel-pooly-assets-v2/SVGs/0-bg/bg_beach.svg",croppedSVG: "/pixel-pooly-assets-v2/Cropped/0-bg/bg_beach.svg" } ,
+   { tier: 2, layer: 0, frame: 1, expiry: 0, traitName: "bg_courtroom.svg", traitDescription: "The OG Pooly knows where defending starts and ends, the courtroom.", stats: [{ categoryType: "defense", value: 4,}, {categoryType: "constitution", value: 3,}], svg: "/pixel-pooly-assets-v2/SVGs/0-bg/bg_courtroom.svg",croppedSVG: "/pixel-pooly-assets-v2/Cropped/0-bg/bg_courtroom.svg" } ,
+   { tier: 0, layer: 0, frame: 2, expiry: 0, traitName: "bg_night.svg", traitDescription: "Soar through the night sky, shoot for the moon.", stats: [], svg: "/pixel-pooly-assets-v2/SVGs/0-bg/bg_night.svg",croppedSVG: "/pixel-pooly-assets-v2/Cropped/0-bg/bg_night.svg" }
+];
+
+const optionsBody = [
+   { tier: 2, layer: 1, frame: 0, expiry: 0, traitName: "Ethereum", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [{ categoryType: "wisdom", value: 2,}, {categoryType: "strength", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/3-body/body_ethereum.svg" },
+   { tier: 0, layer: 1, frame: 1, expiry: 0, traitName: "Fop Black", traitDescription: "Welcome to the inner circle of Friends of Pooly.", stats: [{ categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/3-body/body_fop_black.svg" },
+   { tier: 1, layer: 1, frame: 2, expiry: 0, traitName: "OP Shirt", traitDescription: "Why yes, this shirt is overpowered.", stats: [{ categoryType: "constitution", value: 2,}, {categoryType: "charisma", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/3-body/body_op.svg" },
+   { tier: 0, layer: 1, frame: 3, expiry: 0, traitName: "Pooly", traitDescription: "Excellence is found as a simple Pooly.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/3-body/body_pooly.svg" },
+   { tier: 2, layer: 1, frame: 4, expiry: 0, traitName: "Robot", traitDescription: "Not quite armor, but a future suit.", stats: [{ categoryType: "defense", value: 2,}, {categoryType: "constitution", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/3-body/body_robot.svg" }
+];
+
+const optionsHead = [
+   { tier: 2, layer: 2, frame: 0, expiry: 0, traitName: "Crazy Craw", traitDescription: "Bed head is a thing for birbs too, especially when Pooly isn't always a morning birb.", stats: [{ categoryType: "luck", value: 3,}, {categoryType: "agility", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_crazy_craw.svg" },
+   { tier: 0, layer: 2, frame: 1, expiry: 0, traitName: "Pooly", traitDescription: "Sometimes a birb sitting is just hiding that the birb is standing at the ready.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_pooly.svg" },
+   { tier: 0, layer: 2, frame: 2, expiry: 0, traitName: "Relaxed", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_relaxed.svg" },
+   { tier: 2, layer: 2, frame: 3, expiry: 0, traitName: "Robo-Pooly", traitDescription: "Pooly, now enhanced with bionic laser vision", stats: [{ categoryType: "defense", value: 2,}, {categoryType: "constitution", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_robo-pooly.svg" },
+   { tier: 1, layer: 2, frame: 4, expiry: 0, traitName: "Tornado Cooly", traitDescription: "Too cool for most with a hint of Tornado style.", stats: [{ categoryType: "charisma", value: 1,}, {categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_tornado_cooly.svg" },
+   { tier: 1, layer: 2, frame: 5, expiry: 0, traitName: "Wince", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [{ categoryType: "wisdom", value: 1,}, {categoryType: "charisma", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/5-head/head_wince.svg" }
+];
+
+const optionsLeft = [
+   { tier: 0, layer: 4, frame: 0, expiry: 0, traitName: "None", traitDescription: "No wings, no worries.", stats: [], svg:"" },
+   { tier: 0, layer: 4, frame: 1, expiry: 0, traitName: "Left Pooly", traitDescription: "For when Pooly is ready to fight, take flight, or flaunt.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/2-wing_left/wing_left_pooly.svg" },
+   { tier: 1, layer: 4, frame: 2, expiry: 1, traitName: "Left Robot", traitDescription: "Pooly is back from the future with enhancements.", stats: [{ categoryType: "strength", value: 2,}, {categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/2-wing_left/wing_left_robot.svg" },
+   { tier: 1, layer: 4, frame: 3, expiry: 0, traitName: "Left Tucked", traitDescription: "A confident Pooly knows when to nest in for the day.", stats: [{ categoryType: "strength", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/2-wing_left/wing_left_tucked.svg" }
+];
+
+const optionsRight = [
+   { tier: 0, layer: 5, frame: 0, expiry: 0, traitName: "None", traitDescription: "No wings, no worries.", stats: [], svg:"" },
+   { tier: 0, layer: 5, frame: 1, expiry: 0, traitName: "Right Pooly", traitDescription: "For when Pooly is ready to fight, take flight, or flaunt.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/1-wing_right/wing_right_pooly.svg" },
+   { tier: 1, layer: 5, frame: 2, expiry: 1, traitName: "Right Robot", traitDescription: "Pooly is back from the future with enhancements.", stats: [{ categoryType: "strength", value: 2,}, {categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/1-wing_right/wing_right_robot.svg" },
+   { tier: 1, layer: 5, frame: 3, expiry: 0, traitName: "Right Tucked", traitDescription: "A confident Pooly knows when to nest in for the day.", stats: [{ categoryType: "strength", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/1-wing_right/wing_right_tucked.svg" }
+];
+
+const optionsHeadAcc = [
+   { tier: 0, layer: 6, frame: 0, expiry: 0, traitName: "None", traitDescription: "Pooly has a craw, they don't need a hat.", stats: [], svg:"" },
+   { tier: 0, layer: 6, frame: 1, expiry: 0, traitName: "Cap Retro", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/6-head_accessory/head_accessory_cap_retro.svg" },
+   { tier: 1, layer: 6, frame: 2, expiry: 0, traitName: "Cowboy Hat Tan", traitDescription: "Save a horse, defend DeFi.", stats: [{ categoryType: "agility", value: 1,}, {categoryType: "charisma", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/6-head_accessory/head_accessory_cowboy_hat_tan.svg" },
+   { tier: 2, layer: 6, frame: 3, expiry: 0, traitName: "Crown", traitDescription: "The power of Pooly is having the royal guard on the right side.", stats: [{ categoryType: "defense", value: 2,}, {categoryType: "strength", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/6-head_accessory/head_accessory_crown.svg" },
+   { tier: 1, layer: 6, frame: 4, expiry: 0, traitName: "Eggshell", traitDescription: "Protecc the Pooly with egghead helmet.", stats: [{ categoryType: "defense", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/6-head_accessory/head_accessory_eggshell.svg" },
+   { tier: 1, layer: 6, frame: 5, expiry: 0, traitName: "Giga Brain", traitDescription: "Make Pooly able to out-smart any obstacle in their path.", stats: [{ categoryType: "wisdom", value: 1,}, {categoryType: "luck", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/6-head_accessory/head_accessory_giga_brain.svg" }
+];
+
+const optionsFaceAcc = [
+   { tier: 0, layer: 7, frame: 0, expiry: 0, traitName: "None", traitDescription: "Keep that right wing open for what's coming next.", stats: [], svg:"" },
+   { tier: 0, layer: 7, frame: 1, expiry: 0, traitName: "Bubble Pipe", traitDescription: "Hide Pooly in a cloud of bubbles to escape from prying eyes.", stats: [{ categoryType: "charisma", value: 1,}, {categoryType: "agility", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/9-accessory_face/accessory_face_bubble_pipe.svg" },
+   { tier: 0, layer: 7, frame: 2, expiry: 0, traitName: "Love Letter", traitDescription: "Pooly, has a part time delivery service, not just for Kiki.", stats: [{ categoryType: "defense", value: 2,}, {categoryType: "wisdom", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/9-accessory_face/accessory_face_love_letter.svg" },
+   { tier: 0, layer: 7, frame: 3, expiry: 0, traitName: "Monocle", traitDescription: "Posh Pooly requires a monocle for gestures and emphasis.", stats: [{ categoryType: "charisma", value: 2,}, {categoryType: "wisdom", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/9-accessory_face/accessory_face_monocle.svg" },
+   { tier: 0, layer: 7, frame: 4, expiry: 0, traitName: "Smokes", traitDescription: "Sit back, relax, and shroud Pooly in cloud.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/9-accessory_face/accessory_face_smokes.svg" }
+];
+
+const optionsBodyAcc = [
+   { tier: 0, layer: 8, frame: 0, expiry: 0, traitName: "None", traitDescription: "Some Pooly's don't need threads to be reppin'.", stats: [], svg:"" },
+   { tier: 1, layer: 8, frame: 1, expiry: 0, traitName: "Flamingo", traitDescription: "Floating in pool with a feathered friend.", stats: [{ categoryType: "agility", value: 1,}, {categoryType: "luck", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/4-body_accessory/body_accessory_flamingo.svg" },
+   { tier: 0, layer: 8, frame: 2, expiry: 0, traitName: "Floatie Pink", traitDescription: "Pooly struts some floatie pinks for speed in the water.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/4-body_accessory/body_accessory_floatie_pink.svg" },
+   { tier: 2, layer: 8, frame: 3, expiry: 0, traitName: "Pooly Chain", traitDescription: "Even a birb can be a little gangsta, sometimes.", stats: [{ categoryType: "charisma", value: 2,}, {categoryType: "luck", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/4-body_accessory/body_accessory_medal.svg" },
+   { tier: 1, layer: 8, frame: 4, expiry: 0, traitName: "Suit And Tie Black And Blue", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [{ categoryType: "charisma", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/4-body_accessory/body_accessory_suit_and_tie_black_and_blue.svg" }
+];
+
+const optionsLeftWingAcc = [
+   { tier: 0, layer: 10, frame: 0, expiry: 0, traitName: "None", traitDescription: "Keep that right wing open for what's coming next.", stats: [], svg:"" },
+   { tier: 1, layer: 10, frame: 1, expiry: 0, traitName: "Cane Blue", traitDescription: "Walk tall, stroll fancy, and pop some heads when Pooly marches.", stats: [{ categoryType: "charisma", value: 1,}, {categoryType: "luck", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/7-accessory_left/accessory_left_cane_blue.svg" },
+   { tier: 1, layer: 10, frame: 2, expiry: 0, traitName: "Drink", traitDescription: "A tropical drink to break the ice.", stats: [{ categoryType: "charisma", value: 2,}, {categoryType: "wisdom", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/7-accessory_left/accessory_left_drink.svg" },
+   { tier: 3, layer: 10, frame: 3, expiry: 0, traitName: "Defender Shield", traitDescription: "Start the shield wall with this Defender Shield.", stats: [{ categoryType: "defense", value: 3,}, {categoryType: "constitution", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/7-accessory_left/accessory_left_d_shield.svg" },
+   { tier: 2, layer: 10, frame: 4, expiry: 0, traitName: "Judges Gavel", traitDescription: "Pooly's voice will echo like the smack of the gavel.", stats: [{ categoryType: "wisdom", value: 3,}, {categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/7-accessory_left/accessory_left_judges_gavel.svg" },
+   { tier: 0, layer: 10, frame: 5, expiry: 0, traitName: "Trophy", traitDescription: "Pooly has won, everything!", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/7-accessory_left/accessory_left_trophy.svg" }
+];
+
+const optionsRightWingAcc = [
+   { tier: 0, layer: 11, frame: 0, expiry: 0, traitName: "None", traitDescription: "Keep that right wing open for what's coming next.", stats: [], svg:"" },
+   { tier: 3, layer: 11, frame: 1, expiry: 0, traitName: "Defender Shield", traitDescription: "Start the shield wall with this Defender Shield.", stats: [{ categoryType: "defense", value: 3,}, {categoryType: "constitution", value: 2,}], svg:"/pixel-pooly-assets-v2/SVGs/8-accessory_right/accessory_right_d_shield.svg" },
+   { tier: 2, layer: 11, frame: 2, expiry: 0, traitName: "Judges Gavel", traitDescription: "Pooly's voice will echo like the smack of the gavel.", stats: [{ categoryType: "wisdom", value: 3,}, {categoryType: "defense", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/8-accessory_right/accessory_right_judges_gavel.svg" },
+   { tier: 0, layer: 11, frame: 3, expiry: 0, traitName: "Star Wand", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/8-accessory_right/accessory_right_star_wand.svg" },
+   { tier: 1, layer: 11, frame: 4, expiry: 0, traitName: "Tornado", traitDescription: "Defending DeFi with the power of a tornado.", stats: [{ categoryType: "defense", value: 1,}, {categoryType: "strength", value: 1,}], svg:"/pixel-pooly-assets-v2/SVGs/8-accessory_right/accessory_right_tornado.svg" },
+   { tier: 0, layer: 11, frame: 5, expiry: 0, traitName: "Water Bottle", traitDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.", stats: [], svg:"/pixel-pooly-assets-v2/SVGs/8-accessory_right/accessory_right_water_bottle.svg" }
+];
