@@ -4,6 +4,7 @@ import classNames from 'clsx'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { LinkComponent } from '@/components/shared/LinkComponent'
+import WalletConnect from '@/components/web3/WalletConnect'
 export default function RootLayout({ children }: any) {
   const classes = classNames('App', 'bg-gradient-dark min-h-[100vh] flex flex-col relative pb-20')
   return (

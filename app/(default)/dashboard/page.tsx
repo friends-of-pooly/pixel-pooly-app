@@ -15,7 +15,7 @@ import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
 
 export default function Home() {
   return (
-    <>
+    <section className="block py-32">
       <Tabs.Root defaultValue="tab2">
         <div className="max-w-screen-3xl container grid grid-cols-12 gap-10">
           <div className="col-span-12 lg:col-span-3">
@@ -91,6 +91,6 @@ export default function Home() {
           </div>
         </div>
       </Tabs.Root>
-    </>
+    </section>
   )
 }

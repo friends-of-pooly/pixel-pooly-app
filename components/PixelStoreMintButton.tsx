@@ -22,12 +22,12 @@ export const PixelStoreMintButton = ({ className, label = 'Mint' }: PixelStoreMi
   const contractStore = useContractAutoLoad('PixelStore')
 
   const price = usePixelStoreGetFramePrices({
-    address: contractStore.address,
+    address: contractStore?.address,
     args: [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], itemSelection],
   })
 
   const { write, data, error } = usePixelUniverseMintWithFrames({
-    address: contract.address,
+    address: contract?.address,
     args: [address, itemSelection],
     overrides: {
       value: price?.data?.reduce((acc: BigNumber, val: BigNumber) => acc.add(val), BigNumber.from('0')),

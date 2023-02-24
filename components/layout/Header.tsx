@@ -13,6 +13,7 @@ import { BranchIsWalletConnected } from '../shared/branch/BranchIsWalletConnecte
 import { LinkComponent } from '../shared/LinkComponent'
 import ResponsiveMobileAndDesktop from '../shared/responsive/ResponsiveMobileAndDesktop'
 import { ThemeToggle } from '../shared/theme-toggle'
+import WalletConnect from '../web3/WalletConnect'
 
 interface Props {
   className?: string
@@ -55,9 +56,7 @@ export function Header(props: Props) {
         <LinkComponent className="flex items-center" href="/dashboard">
           <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Enter App</button>
         </LinkComponent>
-        <BranchIsWalletConnected>
-          <UserDropdown />
-        </BranchIsWalletConnected>
+        <WalletConnect />
         <ThemeToggle />
       </div>
     </header>
