@@ -53,6 +53,9 @@ export function Header(props: Props) {
       </div>
 
       <div className="flex items-center gap-4">
+        <LinkComponent className="flex items-center" href="/collection">
+          <button className="btn btn-purple btn-pill btn-sm bg-gradient-primary w-full py-6 text-sm">Collection</button>
+        </LinkComponent>
         <LinkComponent className="flex items-center" href="/dashboard">
           <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Enter App</button>
         </LinkComponent>

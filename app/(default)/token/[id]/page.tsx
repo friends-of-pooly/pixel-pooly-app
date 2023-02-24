@@ -33,8 +33,6 @@ export default function Home({ params }: any) {
       return true
     })
 
-  console.log(itemList, 'itemList')
-
   return (
     <div className="container">
       <div className="grid grid-cols-12 gap-12">

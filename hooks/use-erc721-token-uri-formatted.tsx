@@ -7,7 +7,7 @@ import { usePixelPoolyTokenUri } from '@/lib/blockchain'
 export const useERC721TokenURIFormatted = (contractAddress: string, id: string) => {
   const { data, ...rest } = usePixelPoolyTokenUri({
     address: contractAddress as `0x${string}`,
-    args: [BigNumber.from(id)],
+    args: [id],
   })
 
   const [attributes, setAttributes] = useState()

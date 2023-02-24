@@ -8,9 +8,6 @@ import
   @apply dark:bg-slate-900 dark:text-white bg-gradient-to-br from-indigo-50 via-white to-yellow-100 dark:from-neutral-900 dark:to-neutral-800;
 }
 
-.bg-gradient-primary {
-  @apply bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 dark:bg-slate-900 dark:text-white;
-}
 
 .bg-gradient-dark {
   @apply bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 dark:bg-slate-900 dark:text-white;

@@ -57,7 +57,7 @@ export default function Home() {
           <div className="col-span-12 md:col-span-6">
             <Image
               className="w-full rounded-lg border-4 shadow-xl"
-              src="/story/pixel-waashington-computer.png"
+              src="/story/washington-shield-stand.png"
               alt="Pixel Pooly"
               width={600}
               height={600}
@@ -67,19 +67,22 @@ export default function Home() {
             <div className="my-3">
               <h3 className="mb-2 text-4xl font-bold">🛡 Defending DeFi</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
-                Sed estibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.
+                We believe that DeFi is critical to the success of the Open Web3, and are working to promote its adoption and use. By supporting DeFi
+                projects and advocating for its importance, Friends of Pooly is helping to build a more resilient and decentralized financial system.
               </p>
             </div>
             <div className="my-3">
-              <h3 className="mb-2 text-4xl font-bold">🌐 Securing an Open Web3</h3>
+              <h3 className="mb-2 text-4xl font-bold">🔐 Securing an Open Web3</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
-                Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.
+                Friends of Pooly believes that an Open Web3 is essential to the future of the internet, and is working to secure this vision. We are
+                committed to promoting accessibility, neutrality, digital ownership, and privacy as core values of the Open Web3.
               </p>
             </div>
             <div className="my-3">
-              <h3 className="mb-2 text-4xl font-bold">🤗 Strengthening Community</h3>
+              <h3 className="mb-2 text-4xl font-bold">🌐 Network State Infrastructure</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
-                Sed vestibulum mi eget ligula accumsan, quis rhoncus est mattis. Vestibulum ac felis eget diam maximus sagittis.
+                We believe that education is critical to promoting the adoption and use of DeFi and the Open Web3. By advocating for these values and
+                educating the broader public about their importance, Friends of Pooly is helping to build a more informed and engaged community.
               </p>
             </div>
           </div>
@@ -91,7 +94,7 @@ export default function Home() {
           <div className="col-span-12 md:col-span-6">
             <Image
               className="w-full rounded-lg border-4 shadow-xl"
-              src="/story/washington-shield-stand.png"
+              src="/story/pixel-waashington-computer.png"
               alt="Defending DeFi"
               width={600}
               height={600}
@@ -143,11 +146,13 @@ export default function Home() {
           </div>
           <div className="col-span-12 flex flex-col justify-center md:col-span-6 lg:order-6">
             <div className="my-3">
-              <h3 className="mb-2 text-5xl font-semibold">Education &amp; Values </h3>
-              <h3 className="mb-2 text-2xl font-normal">EVM Storage Proofs</h3>
+              <h3 className="mb-2 text-5xl font-semibold">Open Network State</h3>
+              <h3 className="mb-2 text-2xl font-normal">Building Grassroots Communities</h3>
               <p className="text-lg leading-8">
-                Nulla viverra faucibus hendrerit. Proin vel elit imperdiet, venenatis elit sed, tincidunt magna. Etiam sed dapibus risus, vel laoreet
-                tortor. Pellentesque lobortis auctor eros, id tristique lectus vestibulum tempor.{' '}
+                The Open Web3 is a vision for a decentralized internet, where every individual has equitable access to digital computations,
+                currencies, and networks. Accessibility is key to this vision, and Friends of Pooly believes that accessibility should be prioritized
+                above all else. This means ensuring that everyone, regardless of their background or resources, has the ability to participate in the
+                Ethereum network state.
               </p>
               <LinkComponent className="text-gradient-primary mt-4 block text-lg font-bold" href="/guide">
                 Learn More
