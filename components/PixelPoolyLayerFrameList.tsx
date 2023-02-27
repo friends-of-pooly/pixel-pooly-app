@@ -39,18 +39,7 @@ export const PixelPoolyLayerFrameList = ({ className, items, layer }: PixelPooly
         return (
           <div onClick={() => handleSetLayerFrame(item.frame)} key={index} className={itemClasses}>
             <div className="flex-center col-span-4 flex ">
-              <span className="item-preview">
-                <img src={item.croppedSVG} className="h-20 w-20" />
-                <svg
-                  width="100"
-                  height="100"
-                  viewBox="0 0 84.667 84.667"
-                  shapeRendering="crispEdges"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mx-auto"
-                  dangerouslySetInnerHTML={{ __html: item.SVG }}
-                />
-              </span>
+              <span className="item-previews p-1">{!item.croppedSVG ? null : <img src={item.croppedSVG} className="h-20 w-20" />}</span>
             </div>
             <div className="col-span-8">
               <h3 className="mb-3 text-2xl font-bold">{item.traitName}</h3>

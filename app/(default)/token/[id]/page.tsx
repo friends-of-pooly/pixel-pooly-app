@@ -4,6 +4,7 @@
 import PixelPoolyBuyAndEquipItems from '@/components/pixel-pooly-buy-and-equip-items'
 import PixelPoolyInventory from '@/components/pixel-pooly-inventory'
 import PixelPoolyTraitDescription from '@/components/pixel-pooly-trait-description'
+import PixelPoolyTraitLayerName from '@/components/pixel-pooly-trait-layer-name'
 import PixelPoolyTraitName from '@/components/pixel-pooly-trait-name'
 import PixelPoolyTraitPrice from '@/components/pixel-pooly-trait-price'
 import PixelPoolyTraitTier from '@/components/pixel-pooly-trait-tier'
@@ -52,10 +53,15 @@ export default function Home({ params }: any) {
               {itemList?.map((item, layer) => (
                 <div key={layer} className="card relative col-span-6 flex cursor-pointer gap-10">
                   <div className="flex-center flex min-h-[64px] w-[120px]">
-                    <PixelPoolyRenderImage layer={item.layer} frame={item.frame} className="w-full max-w-[100px]" />
+                    <PixelPoolyRenderImage layer={item.layer} frame={item.frame} className="max-h-[84px] w-full max-w-[100px]" />
                   </div>
                   <div className="relative flex flex-1 flex-col justify-center">
                     <PixelPoolyTraitName className="font-raleway text-xl font-bold" layer={item.layer} frame={item.frame} />
+                    <PixelPoolyTraitLayerName
+                      className="mt-2 font-raleway text-sm font-medium text-neutral-500"
+                      layer={item.layer}
+                      frame={item.frame}
+                    />
                     <PixelPoolyTraitDescription className="mt-2 text-sm" layer={item.layer} frame={item.frame} />
                     <PixelPoolyTraitPrice className="mt-4 inline-block text-sm" layer={item.layer} frame={item.frame} />
                     <span className=""></span>
