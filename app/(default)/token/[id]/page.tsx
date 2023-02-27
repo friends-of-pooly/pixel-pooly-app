@@ -1,6 +1,8 @@
 // @ts-nocheck
 'use client'
 
+import { useAccount } from 'wagmi'
+
 import PixelPoolyBuyAndEquipItems from '@/components/pixel-pooly-buy-and-equip-items'
 import PixelPoolyInventory from '@/components/pixel-pooly-inventory'
 import PixelPoolyTraitDescription from '@/components/pixel-pooly-trait-description'
@@ -11,11 +13,17 @@ import PixelPoolyRenderImage from '@/components/PixelPoolyRenderImage'
 import PixelPoolyTraitsBoostedPreview from '@/components/PixelPoolyTraitsBoostedPreview'
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { useERC721TokenURIFormatted } from '@/hooks/use-erc721-token-uri-formatted'
-import { usePixelPoolyStorageGetCharacter } from '@/lib/blockchain'
+import { usePixelPoolyOwnerOf, usePixelPoolyStorageGetCharacter } from '@/lib/blockchain'
 
 export default function Home({ params }: any) {
   const contract = useContractAutoLoad('PixelPooly')
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
+
+  const { data: ownerData } = usePixelPoolyOwnerOf({ address: contract?.address, args: [params?.id] })
+  const account = useAccount()
+
+  console.log(`ownerData: `, ownerData)
+  console.log(`account: `, account.address)
 
   const { data } = useERC721TokenURIFormatted(contract?.address, params?.id)
 
@@ -69,12 +77,16 @@ export default function Home({ params }: any) {
           </div>
         </div>
       </div>
-      <section className="container py-10 lg:py-16">
-        <PixelPoolyInventory />
-      </section>
-      <section className="container py-10 lg:py-16">
-        <PixelPoolyBuyAndEquipItems />
-      </section>
+      {account.address == ownerData ? (
+        <>
+          <section className="container py-10 lg:py-16">
+            <PixelPoolyInventory />
+          </section>
+          <section className="container py-10 lg:py-16">
+            <PixelPoolyBuyAndEquipItems character={itemList} tokenId={params?.id} />
+          </section>
+        </>
+      ) : null}
     </>
   )
 }
