@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 -0.5 38 38"><path stroke-width="1.01" stroke="#7124ee" d="M12 25h3m3 0h6m-13 1h11m1 0h2m-14 1h3m1 0h8m1 0h2m-15 1h9m3 0h3m-12 1h2m1 0h5m1 0h1m1 0h1m-13 1h6m1 0h2m1 0h3m-13 1h1m1 0h2m1 0h7m-11 1h3m1 0h8m-12 1h1m1 0h5m1 0h3m-11 1h6m1 0h2m1 0h1m-11 1h4m1 0h6m-8 1h5"/><path stroke-width="1.01" stroke="#7125ee" d="M15 25h1m-2 2h1m6 1h2m-10 1h1m2 0h1m8 2h1m-13 1h1m6 2h1"/><path stroke-width="1.01" stroke="#7124ef" d="M16 25h1m6 2h1m-4 1h1m-4 4h1m7 2h1m-4 2h1"/><path stroke-width="1.01" stroke="#7024ee" d="M17 25h1m4 1h1m2 0h1m-4 3h1m1 0h1m-6 1h1m-3 1h1m-3 2h1m5 0h1m3 0h1m-8 2h1"/><path stroke-width="1.01" stroke="#7e3aeb" d="M24 25h1"/><path stroke-width="1.01" stroke="#6514dd" d="M11 29h2m-2 1h2m-2 1h2m-1 1h1m-1 1h2m-2 1h1m0 1h1m11 0h1m-13 1h3m8 0h2m-11 1h7m2 0h1"/><path stroke-width="1.01" stroke="#7025ee" d="M22 30h1"/><path stroke-width="1.01" stroke="#7024ef" d="M14 31h1m8 3h1"/><path stroke-width="1.01" stroke="#6414dd" d="M11 32h1m1 2h1m2 2h1m6 0h1"/><path stroke-width="1.01" stroke="#6514dc" d="M11 33h1m-1 1h1m10 3h2"/><path stroke-width="1.01" stroke="#5519ae" d="M11 35h2m-2 2h4m10 0h1"/><path stroke-width="1.01" stroke="#5519af" d="M11 36h2"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15" height="13.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 15 13.01" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width="1.01">
+  <path d="m1 5e-3h3m3 0h6m-13 1h11m1 0h2m-14 1h3m1 0h8m1 0h2m-15 1h9m3 0h3m-12 1h2m1 0h5m1 0h1m1 0h1m-13 1h6m1 0h2m1 0h3m-13 1h1m1 0h2m1 0h7m-11 1h3m1 0h8m-12 1h1m1 0h5m1 0h3m-11 1h6m1 0h2m1 0h1m-11 1h4m1 0h6m-8 1h5" stroke="#7124ee"/>
+  <path d="m4 5e-3h1m-2 2h1m6 1h2m-10 1h1m2 0h1m8 2h1m-13 1h1m6 2h1" stroke="#7125ee"/>
+  <path d="m5 5e-3h1m6 2h1m-4 1h1m-4 4h1m7 2h1m-4 2h1" stroke="#7124ef"/>
+  <path d="m6 5e-3h1m4 1h1m2 0h1m-4 3h1m1 0h1m-6 1h1m-3 1h1m-3 2h1m5 0h1m3 0h1m-8 2h1" stroke="#7024ee"/>
+  <path d="m13 5e-3h1" stroke="#7e3aeb"/>
+  <path d="m0 4.005h2m-2 1h2m-2 1h2m-1 1h1m-1 1h2m-2 1h1m0 1h1m11 0h1m-13 1h3m8 0h2m-11 1h7m2 0h1" stroke="#6514dd"/>
+  <path d="m11 5.005h1" stroke="#7025ee"/>
+  <path d="m3 6.005h1m8 3h1" stroke="#7024ef"/>
+  <path d="m0 7.005h1m1 2h1m2 2h1m6 0h1" stroke="#6414dd"/>
+  <path d="m0 8.005h1m-1 1h1m10 3h2" stroke="#6514dc"/>
+  <path d="m0 10.005h2m-2 2h4m10 0h1" stroke="#5519ae"/>
+  <path d="m0 11.005h2" stroke="#5519af"/>
+ </g>
+</svg>
