@@ -5,6 +5,31 @@ import { pixelStoreABI, pixelUniverseABI } from '@/lib/blockchain'
 export function useContractAutoLoad(contract: string, chainId?: number): any {
   const { chain } = useNetwork()
   switch (chainId || chain?.id) {
+    case 420:
+      switch (contract) {
+        case 'PixelPooly':
+          return {
+            address: '0x1af7bBb04793E6eb5F7eCB7A0f5B2f697d0398C4',
+            abi: pixelUniverseABI,
+          }
+        case 'PixelUniverse':
+          return {
+            address: '0x7A00f743FEE6A88037A2D4f4963c4a87a49e8928',
+            abi: pixelUniverseABI,
+          }
+        case 'PixelPoolyStorage':
+          return {
+            address: '0xd6537F6C2A2c78438c796A3Db48c985BEE0adDbc',
+            abi: pixelStoreABI,
+          }
+        case 'PixelStore':
+          return {
+            address: '0x9F87290F9de941668a8C26BcC04A28e306CDa890',
+            abi: pixelStoreABI,
+          }
+        default:
+          throw new Error(`Unknown contract ${contract}`)
+      }
     case 31337:
       switch (contract) {
         case 'PixelPooly':
