@@ -1,9 +1,9 @@
-// @ts-nocheck
 'use client'
+
+import { useEffect } from 'react'
 
 import { useAccount } from 'wagmi'
 
-import PixelPoolyBuyAndEquipItems from '@/components/pixel-pooly-buy-and-equip-items'
 import PixelPoolyInventory from '@/components/pixel-pooly-inventory'
 import PixelPoolyTraitDescription from '@/components/pixel-pooly-trait-description'
 import PixelPoolyTraitLayerName from '@/components/pixel-pooly-trait-layer-name'
@@ -12,26 +12,31 @@ import PixelPoolyTraitPrice from '@/components/pixel-pooly-trait-price'
 import PixelPoolyTraitTier from '@/components/pixel-pooly-trait-tier'
 import PixelPoolyRenderImage from '@/components/PixelPoolyRenderImage'
 import PixelPoolyTraitsBoostedPreview from '@/components/PixelPoolyTraitsBoostedPreview'
+import PixelPoolyBuyAndEquipItems from '@/components/updater/pixel-pooly-buy-and-equip-items'
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { useERC721TokenURIFormatted } from '@/hooks/use-erc721-token-uri-formatted'
 import { usePixelPoolyOwnerOf, usePixelPoolyStorageGetCharacter } from '@/lib/blockchain'
+import { usePixelPoolyUpdater } from '@/lib/state/updater'
 
 export default function Home({ params }: any) {
   const contract = useContractAutoLoad('PixelPooly')
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
 
-  const { data: ownerData } = usePixelPoolyOwnerOf({ address: contract?.address, args: [params?.id] })
   const account = useAccount()
-
-  console.log(`ownerData: `, ownerData)
-  console.log(`account: `, account.address)
-
+  const { data: ownerData } = usePixelPoolyOwnerOf({ address: contract?.address, args: [params?.id] })
   const { data } = useERC721TokenURIFormatted(contract?.address, params?.id)
 
   const { data: data2, isSuccess: isSuccess2 } = usePixelPoolyStorageGetCharacter({
     address: contractStorage?.address,
     args: [params?.id],
   })
+
+  const [poolyUpdater, setUpdater, setLayerAndFrames] = usePixelPoolyUpdater()
+  useEffect(() => {
+    if (isSuccess2) {
+      setLayerAndFrames(data2)
+    }
+  }, [data2])
 
   const itemList = data2
     ?.map((frame, layer) => {
@@ -83,7 +88,7 @@ export default function Home({ params }: any) {
           </div>
         </div>
       </div>
-      {account.address == ownerData ? (
+      {account?.address == ownerData ? (
         <>
           <section className="container py-10 lg:py-16">
             <PixelPoolyInventory />

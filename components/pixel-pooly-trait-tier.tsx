@@ -13,7 +13,6 @@ interface PixelPoolyTraitTierProps {
 export const PixelPoolyTraitTier = ({ className, layer, frame }: PixelPoolyTraitTierProps) => {
   const classes = classNames(className, 'PixelPoolyTraitTier', 'inline')
   const trait = findImageFromLayerAndFrame(layer, frame)
-  console.log(trait, 'trait')
 
   const traitTier = trait?.tier
 

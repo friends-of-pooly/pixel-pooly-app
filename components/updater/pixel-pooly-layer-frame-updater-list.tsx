@@ -2,9 +2,10 @@ import * as React from 'react'
 
 import classNames from 'clsx'
 
-import pixelPoolyItems from '@/config/pixel-pooly-items'
 import { tierPrices } from '@/data/tier-prices'
 import { usePixelPoolyUpdater } from '@/lib/state/updater'
+
+import TimeFromEpoch from '../shared/time/TimeFromEpoch'
 
 interface PixelPoolyLayerFrameUpdaterListProps {
   className?: string
@@ -39,23 +40,17 @@ export const PixelPoolyLayerFrameUpdaterList = ({ className, items, layer }: Pix
         return (
           <div onClick={() => handleSetLayerFrame(item.frame)} key={index} className={itemClasses}>
             <div className="flex-center col-span-4 flex ">
-              <span className="item-preview">
-                <img src={item.croppedSVG} className="h-20 w-20" />
-                <svg
-                  width="100"
-                  height="100"
-                  viewBox="0 0 84.667 84.667"
-                  shapeRendering="crispEdges"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mx-auto"
-                  dangerouslySetInnerHTML={{ __html: item.SVG }}
-                />
-              </span>
+              <span className="pt-4">{!item.croppedSVG ? null : <img src={item.croppedSVG} className="h-20 w-20" />}</span>
             </div>
             <div className="col-span-8">
               <h3 className="mb-3 text-2xl font-bold">{item.traitName}</h3>
               <p className="text-sm">{item.traitDescription}</p>
-              <span className=""> {tierPrices[item.tier]} ETH</span>
+              <span className="tag tag-green mt-2 inline-block font-bold"> {tierPrices[item.tier]} ETH</span>
+              {!item.expiry ? null : (
+                <span className="mt-2 inline-block text-xs font-medium">
+                  Expires: <TimeFromEpoch epoch={item.expiry} />{' '}
+                </span>
+              )}
             </div>
           </div>
         )

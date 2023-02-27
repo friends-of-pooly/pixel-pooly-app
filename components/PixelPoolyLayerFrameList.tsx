@@ -6,6 +6,8 @@ import pixelPoolyItems from '@/config/pixel-pooly-items'
 import { tierPrices } from '@/data/tier-prices'
 import { usePixelPoolyBuilder } from '@/lib/state/builder'
 
+import TimeFromEpoch from './shared/time/TimeFromEpoch'
+
 interface PixelPoolyLayerFrameListProps {
   className?: string
   layer: number
@@ -42,9 +44,14 @@ export const PixelPoolyLayerFrameList = ({ className, items, layer }: PixelPooly
               <span className="item-previews p-1">{!item.croppedSVG ? null : <img src={item.croppedSVG} className="h-20 w-20" />}</span>
             </div>
             <div className="col-span-8">
-              <h3 className="mb-3 text-2xl font-bold">{item.traitName}</h3>
-              <p className="text-sm">{item.traitDescription}</p>
-              <span className=""> {tierPrices[item.tier]} ETH</span>
+              <h3 className="mb-2.s text-2xl font-bold">{item.traitName}</h3>
+              <p className="mb-2 text-sm">{item.traitDescription}</p>
+              <span className="tag tag-green mt-2 inline-block font-bold"> {tierPrices[item.tier]} ETH</span>
+              {!item.expiry ? null : (
+                <span className="mt-2 inline-block text-xs font-medium">
+                  Expires: <TimeFromEpoch epoch={item.expiry} />{' '}
+                </span>
+              )}
             </div>
           </div>
         )
