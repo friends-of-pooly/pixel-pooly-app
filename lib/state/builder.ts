@@ -2,13 +2,12 @@ import { useCallback } from 'react'
 
 import { SetStateAction, WritableAtom, atom, useAtom } from 'jotai'
 
-const DEFAULT_BUILDER = [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+const DEFAULT_BUILDER = [0, 1, 1, 31, 0, 0, 0, 0, 0, 0, 0, 0]
 
 let strAtom: WritableAtom<number[], SetStateAction<number[]>>
 strAtom = atom(DEFAULT_BUILDER)
 if (typeof window !== 'undefined') {
-  // strAtom = atom(JSON.parse(window?.localStorage.getItem('builder') || `${DEFAULT_BUILDER}`))
-  // strAtom = atom(JSON.parse(window?.localStorage.getItem('builder')) || `${DEFAULT_BUILDER}`)
+  strAtom = atom(window?.localStorage.getItem('builder') ? JSON.parse('[' + window?.localStorage.getItem('builder') + ']') : DEFAULT_BUILDER)
 } else {
   strAtom = atom(DEFAULT_BUILDER)
 }

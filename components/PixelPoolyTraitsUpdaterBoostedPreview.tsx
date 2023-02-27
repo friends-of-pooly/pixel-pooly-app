@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { BigNumber, utils } from 'ethers'
 import { useNetwork } from 'wagmi'
 
+import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { usePixelPoolyStorageConstructTokenUri, usePixelPoolyStorageFormatTraitsBytesFromCharacter } from '@/lib/blockchain'
 import { usePixelPoolyUpdater } from '@/lib/state/updater'
 
@@ -20,8 +21,9 @@ const DEFAULT_IMAGE_ARGS = utils.solidityPack(
 export const PixelPoolyTraitsUpdaterBoostedPreview = ({ className }: PixelPoolyTraitsUpdaterBoostedPreviewProps) => {
   const [data] = usePixelPoolyUpdater()
   const { chain } = useNetwork()
+  const contract = useContractAutoLoad('PixelPoolyStorage')
   const traitsFormatted = usePixelPoolyStorageFormatTraitsBytesFromCharacter({
-    address: '0x8A791620dd6260079BF849Dc5567aDC3F2FdC318',
+    address: contract?.address || '',
     chainId: chain?.id || 1,
     args: [
       {
@@ -43,8 +45,7 @@ export const PixelPoolyTraitsUpdaterBoostedPreview = ({ className }: PixelPoolyT
 
   // TODO: call PixelPooly => traitsPreview instead
   const txRead = usePixelPoolyStorageConstructTokenUri({
-    address: '0x8A791620dd6260079BF849Dc5567aDC3F2FdC318',
-    chainId: chain?.id || 1,
+    address: contract?.address || '',
     args: [BigNumber.from(0), DEFAULT_IMAGE_ARGS as `0x${string}`, traitsFormatted.data as `0x${string}`],
   })
 

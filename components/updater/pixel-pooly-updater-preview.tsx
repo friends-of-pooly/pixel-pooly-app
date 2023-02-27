@@ -2,18 +2,17 @@ import * as React from 'react'
 
 import classNames from 'classnames'
 import { utils } from 'ethers'
-import { useNetwork } from 'wagmi'
 
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { usePixelPoolyRenderPreview } from '@/lib/blockchain'
 import { usePixelPoolyUpdater } from '@/lib/state/updater'
 
-interface PixelPoolyUpdaterPreviewProps {
+interface PixelPoolyUpdatePreviewProps {
   className?: string
 }
 
-export const PixelPoolyUpdaterPreview = ({ className }: PixelPoolyUpdaterPreviewProps) => {
-  const [data, setUpdater] = usePixelPoolyUpdater()
+export const PixelPoolyUpdatePreview = ({ className }: PixelPoolyUpdatePreviewProps) => {
+  const [data] = usePixelPoolyUpdater()
   const contract = useContractAutoLoad('PixelPooly')
   const txRead = usePixelPoolyRenderPreview({
     address: contract?.address || '',
@@ -29,8 +28,8 @@ export const PixelPoolyUpdaterPreview = ({ className }: PixelPoolyUpdaterPreview
     }
   }, [txRead.data])
 
-  const classes = classNames(className, 'PixelPoolyUpdaterPreview')
+  const classes = classNames(className, 'PixelPoolyUpdatePreview')
   return <img className={classes} src={img} alt="PixelPooly Preview" />
 }
 
-export default PixelPoolyUpdaterPreview
+export default PixelPoolyUpdatePreview

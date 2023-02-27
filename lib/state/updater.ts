@@ -2,14 +2,13 @@ import { useCallback } from 'react'
 
 import { SetStateAction, WritableAtom, atom, useAtom } from 'jotai'
 
-const DEFAULT_UPDATER = [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+const DEFAULT_UPDATER = [0, 1, 1, 31, 0, 0, 0, 0, 0, 0, 0, 0]
 // TODO: set the default to the current pixel pooly equiped traits
 
 let strAtom: WritableAtom<number[], SetStateAction<number[]>>
 strAtom = atom(DEFAULT_UPDATER)
 if (typeof window !== 'undefined') {
-  // strAtom = atom(JSON.parse(window?.localStorage.getItem('builder') || `${DEFAULT_UPDATER}`))
-  // strAtom = atom(JSON.parse(window?.localStorage.getItem('builder')) || `${DEFAULT_UPDATER}`)
+  strAtom = atom(window?.localStorage.getItem('updater') ? JSON.parse('[' + window?.localStorage.getItem('updater') + ']') : DEFAULT_UPDATER)
 } else {
   strAtom = atom(DEFAULT_UPDATER)
 }
@@ -32,5 +31,11 @@ export const usePixelPoolyUpdater = () => {
     },
     [mode, setMode]
   )
-  return [mode, setLayerFrame] as const
+  const setLayerAndFrames = useCallback(
+    (layersAndFrames: any) => {
+      setMode(layersAndFrames)
+    },
+    [mode, setMode]
+  )
+  return [mode, setLayerFrame, setLayerAndFrames] as const
 }

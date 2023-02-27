@@ -1,1 +1,1 @@
-export const tierPrices = ['0', '0.1', '0.25', '0.5']
+export const tierPrices = ['0', '0.05', '0.2', '0.5']

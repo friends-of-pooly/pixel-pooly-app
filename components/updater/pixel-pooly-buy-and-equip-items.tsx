@@ -3,7 +3,6 @@ import * as Tabs from '@radix-ui/react-tabs'
 import { BigNumber } from 'ethers'
 
 import MenuDashboardBuilder from '@/components/layout/menu-dashboard-builder'
-import PixelPoolyLayerFrameUpdaterList from '@/components/PixelPoolyLayerFrameUpdaterList'
 import PixelPoolyTraitsUpdaterBoostedPreview from '@/components/PixelPoolyTraitsUpdaterBoostedPreview'
 import PixelPoolyUpdaterPreview from '@/components/PixelPoolyUpdaterPreview'
 import PixelStoreMintButton from '@/components/PixelStoreMintButton'
@@ -12,9 +11,14 @@ import PixelStoreMintPriceSplit from '@/components/PixelStoreMintPriceSplit'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { DialogHeader } from '@/components/ui/dialog'
 import { Separator } from '@/components/ui/separator'
+import PixelPoolyLayerFrameUpdaterList from '@/components/updater/pixel-pooly-layer-frame-updater-list'
 import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { usePixelPoolyStorageGetUnlockedTraits } from '@/lib/blockchain'
+
+import PixelStoreUnlockItemsBatch from './pixel-store-unlock-items-batch'
+import PixelStoreUnlockBatchPrice from './pixels-store-unlock-batch-price'
+import PixelStoreUnlockBatchPriceSplit from './pixels-store-unlock-batch-price-split'
 
 interface PixelPoolyBuyAndEquipItemsProps {
   className?: string
@@ -67,24 +71,7 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
           </div>
           <div className="col-span-12 lg:col-span-3">
             <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 dark:bg-purple-700">
-              <Dialog>
-                <DialogTrigger>
-                  <PixelPoolyUpdaterPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
-                </DialogTrigger>
-                <DialogContent className="container">
-                  <DialogHeader>
-                    <div className="container grid grid-cols-12 gap-5 p-10">
-                      <div className="col-span-12 lg:col-span-6">
-                        <PixelPoolyUpdaterPreview className=" w-full rounded-xl border-4 shadow-2xl" />
-                      </div>
-                      <div className="col-span-12 lg:col-span-6">
-                        <PixelPoolyTraitsUpdaterBoostedPreview />
-                      </div>
-                    </div>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
-
+              <PixelPoolyUpdaterPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
               <div className="mt-6 rounded-lg p-4 shadow-xl dark:bg-purple-900">
                 <PixelPoolyTraitsUpdaterBoostedPreview />
               </div>
@@ -93,25 +80,29 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
               <div className="ic jb flex">
                 <span className="font-lg font-bold">Total Cost</span>
                 <span className="flex items-center text-2xl font-bold">
-                  <PixelStoreMintPrice className="mr-2" /> <span className="">ETH</span>
+                  <PixelStoreUnlockBatchPrice tokenId={tokenId} className="mr-2" /> <span className="">ETH</span>
                 </span>
               </div>
               <Separator className="my-4" />
               <div className="ic jb mb-4 flex">
                 <span className="text-lg font-bold">Lobby3 (80%)</span>
                 <span className="flex items-center">
-                  <PixelStoreMintPriceSplit percentage="80" />
+                  <PixelStoreUnlockBatchPriceSplit tokenId={tokenId} percentage="80" />
                   <span className="ml-2">ETH</span>
                 </span>
               </div>
               <div className="ic jb flex">
                 <span className="font-sm">Friends of Pooly (20%)</span>
                 <span className="flex items-center">
-                  <PixelStoreMintPriceSplit percentage="20" />
+                  <PixelStoreUnlockBatchPriceSplit tokenId={tokenId} percentage="20" />
                   <span className="ml-2">ETH</span>
                 </span>
               </div>
-              <PixelStoreMintButton className="btn-purple btn-pill bg-gradient-color btn-xl mt-5 w-full py-6 text-2xl" label="Mint Pixel Pooly" />
+              <PixelStoreUnlockItemsBatch
+                tokenId={tokenId}
+                className="btn-purple btn-pill bg-gradient-color btn-xl mt-5 w-full py-6 text-2xl"
+                // label="Mint Pixel Pooly"
+              />
             </div>
           </div>
         </div>

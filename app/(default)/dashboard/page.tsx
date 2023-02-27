@@ -8,6 +8,7 @@ import PixelPoolyTraitsBoostedPreview from '@/components/PixelPoolyTraitsBoosted
 import PixelStoreMintButton from '@/components/PixelStoreMintButton'
 import PixelStoreMintPrice from '@/components/PixelStoreMintPrice'
 import PixelStoreMintPriceSplit from '@/components/PixelStoreMintPriceSplit'
+import { LinkComponent } from '@/components/shared/LinkComponent'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { DialogHeader } from '@/components/ui/dialog'
 import { Separator } from '@/components/ui/separator'
@@ -16,7 +17,7 @@ import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
 export default function Home() {
   return (
     <section className="block py-32">
-      <Tabs.Root defaultValue="tab2">
+      <Tabs.Root defaultValue="tab5">
         <div className="max-w-screen-3xl container grid grid-cols-12 gap-10">
           <div className="col-span-12 lg:col-span-3">
             <Tabs.List>
@@ -25,8 +26,10 @@ export default function Home() {
           </div>
           <div className="col-span-12 lg:col-span-6">
             <div className="bg-gradient-color mb-5 flex items-center justify-between rounded-md py-3 px-4 shadow-md">
-              <span className="">Want early access to *new* DeFiDefender item drops?</span>
-              <span className="font-bold">Web3 Login</span>
+              <span className="">Handcraft a PixelPooly and contribute to future of DeFi</span>
+              <LinkComponent className="font-bold" href="/guide">
+                Guide
+              </LinkComponent>
             </div>
             <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
               {pixelPoolyItems.map((item, index) => {
