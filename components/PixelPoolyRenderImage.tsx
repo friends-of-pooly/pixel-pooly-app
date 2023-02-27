@@ -14,6 +14,7 @@ export const PixelPoolyRenderImage = ({ className, layer, frame }: PixelPoolyRen
   const classes = classNames(className, 'PixelPoolyRenderImage')
   const image = findImageFromLayerAndFrame(layer, frame)
 
+  if (!image.croppedSVG) return null
   return <img src={image?.croppedSVG} className={classes} alt={image?.traitName} />
 }
 
