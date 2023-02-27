@@ -67,7 +67,7 @@ export function NavigationMenuGeneral() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Partners</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Friends</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
               {partners.map((component) => (

@@ -3,7 +3,7 @@ export const optionsBG = [
     tier: 1,
     layer: 0,
     frame: 0,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Beach',
     traitDescription: 'Pooly relaxes on the beach when they can.',
     stats: [{ categoryType: 'luck', value: 1 }],
@@ -14,12 +14,12 @@ export const optionsBG = [
     tier: 2,
     layer: 0,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Courtroom',
     traitDescription: 'The OG Pooly knows where defending starts and ends, the courtroom.',
     stats: [
       { categoryType: 'defense', value: 3 },
-      { categoryType: 'export constitution', value: 3 },
+      { categoryType: 'constitution', value: 3 },
     ],
     svg: '/pooly/grid/0-bg/bg_courtroom.svg',
     croppedSVG: '/pooly/cropped/0-bg/bg_courtroom.svg',
@@ -61,7 +61,7 @@ export const optionsBG = [
     tier: 1,
     layer: 0,
     frame: 5,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Starry Sky',
     traitDescription: 'Go beyond the moon, and shoot for the stars.',
     stats: [{ categoryType: 'luck', value: 1 }],
@@ -82,10 +82,10 @@ export const optionsBG = [
 ]
 
 export const optionsRight = [
-  { tier: 0, layer: 5, frame: 0, expiry: 0, traitName: 'None', traitDescription: 'No wings, no worries.', stats: [], svg: '', croppedSVG: '' },
+  { tier: 0, layer: 1, frame: 0, expiry: 0, traitName: 'None', traitDescription: 'No wings, no worries.', stats: [], svg: '', croppedSVG: '' },
   {
     tier: 0,
-    layer: 5,
+    layer: 1,
     frame: 1,
     expiry: 0,
     traitName: 'Right Pooly',
@@ -96,9 +96,9 @@ export const optionsRight = [
   },
   {
     tier: 1,
-    layer: 5,
+    layer: 1,
     frame: 2,
-    expiry: 1,
+    expiry: 1688180400,
     traitName: 'Right Robot',
     traitDescription: 'Pooly is back from the future with enhancements.',
     stats: [
@@ -110,9 +110,9 @@ export const optionsRight = [
   },
   {
     tier: 1,
-    layer: 5,
+    layer: 1,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Right Tucked',
     traitDescription: 'A confident Pooly knows when to nest in for the day.',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -122,10 +122,10 @@ export const optionsRight = [
 ]
 
 export const optionsLeft = [
-  { tier: 0, layer: 4, frame: 0, expiry: 0, traitName: 'None', traitDescription: 'No wings, no worries.', stats: [], svg: '', croppedSVG: '' },
+  { tier: 0, layer: 2, frame: 0, expiry: 0, traitName: 'None', traitDescription: 'No wings, no worries.', stats: [], svg: '', croppedSVG: '' },
   {
     tier: 0,
-    layer: 4,
+    layer: 2,
     frame: 1,
     expiry: 0,
     traitName: 'Left Pooly',
@@ -136,9 +136,9 @@ export const optionsLeft = [
   },
   {
     tier: 1,
-    layer: 4,
+    layer: 2,
     frame: 2,
-    expiry: 1,
+    expiry: 1688180400,
     traitName: 'Left Robot',
     traitDescription: 'Pooly is back from the future with enhancements.',
     stats: [
@@ -150,9 +150,9 @@ export const optionsLeft = [
   },
   {
     tier: 1,
-    layer: 4,
+    layer: 2,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Left Tucked',
     traitDescription: 'A confident Pooly knows when to nest in for the day.',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -164,9 +164,9 @@ export const optionsLeft = [
 export const optionsBody = [
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 0,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Black Bikini',
     traitDescription: "Just chillin', sporting a black bikini, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -175,9 +175,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Orange Bikini',
     traitDescription: "Just chillin', sporting a orange bikini, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -186,9 +186,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 2,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Red Bikini',
     traitDescription: "Just chillin', sporting a red bikini, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -197,9 +197,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'White Bikini',
     traitDescription: "Just chillin', sporting a white bikini, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -208,9 +208,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 4,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Borat',
     traitDescription: 'Catching rays, is very nice!',
     stats: [
@@ -222,7 +222,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 5,
     expiry: 0,
     traitName: 'Buttoned Shirt Blue',
@@ -233,7 +233,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 6,
     expiry: 0,
     traitName: 'Buttoned Shirt Pink',
@@ -244,7 +244,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 7,
     expiry: 0,
     traitName: 'Buttoned Shirt White',
@@ -255,13 +255,13 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 8,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defi Blue',
     traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_defi_blue.svg',
@@ -269,13 +269,13 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 9,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defi Green',
     traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_defi_green.svg',
@@ -283,13 +283,13 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 10,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defi Midnight Blue',
     traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_defi_midnight_blue.svg',
@@ -297,13 +297,13 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 11,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defi Pink',
     traitDescription: "Some say DeFi is Decentralized Finance, for Pooly it's Definitely Fierce.",
     stats: [
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_defi_pink.svg',
@@ -311,9 +311,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 12,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Ethereum',
     traitDescription: 'It all started on Mainnet and now this is how we DAO it.',
     stats: [
@@ -325,9 +325,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 13,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Ethereum Black',
     traitDescription: 'It all started on Mainnet and now this is how we DAO it.',
     stats: [
@@ -339,9 +339,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 14,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Ethereum Gray',
     traitDescription: 'It all started on Mainnet and now this is how we DAO it.',
     stats: [
@@ -353,7 +353,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 15,
     expiry: 0,
     traitName: 'Fop Black',
@@ -364,7 +364,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 16,
     expiry: 0,
     traitName: 'Fop Blue',
@@ -375,7 +375,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 17,
     expiry: 0,
     traitName: 'Fop Orange',
@@ -386,9 +386,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 18,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Heart',
     traitDescription: "Don't fall for the The Rug, Pooly loves and supports all in crypto.",
     stats: [{ categoryType: 'luck', value: 1 }],
@@ -397,57 +397,57 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 19,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Hodl Blue',
     traitDescription: 'Hodl onto your values, hodl onto your beliefs, Pooly will support you.',
-    stats: [{ categoryType: 'export constitution', value: 2 }],
+    stats: [{ categoryType: 'constitution', value: 2 }],
     svg: '/pooly/grid/3-body/body_hodl_blue.svg',
     croppedSVG: '/pooly/cropped/3-body/body_hodl_blue.svg',
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 20,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Hodl Green',
     traitDescription: 'Hodl onto your values, hodl onto your beliefs, Pooly will support you.',
-    stats: [{ categoryType: 'export constitution', value: 2 }],
+    stats: [{ categoryType: 'constitution', value: 2 }],
     svg: '/pooly/grid/3-body/body_hodl_green.svg',
     croppedSVG: '/pooly/cropped/3-body/body_hodl_green.svg',
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 21,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Hodl Midnight Blue',
     traitDescription: 'Hodl onto your values, hodl onto your beliefs, Pooly will support you.',
-    stats: [{ categoryType: 'export constitution', value: 2 }],
+    stats: [{ categoryType: 'constitution', value: 2 }],
     svg: '/pooly/grid/3-body/body_hodl_midnight_blue.svg',
     croppedSVG: '/pooly/cropped/3-body/body_hodl_midnight_blue.svg',
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 22,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Hodl Pink',
     traitDescription: 'Hodl onto your values, hodl onto your beliefs, Pooly will support you.',
-    stats: [{ categoryType: 'export constitution', value: 2 }],
+    stats: [{ categoryType: 'constitution', value: 2 }],
     svg: '/pooly/grid/3-body/body_hodl_pink.svg',
     croppedSVG: '/pooly/cropped/3-body/body_hodl_pink.svg',
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 23,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'OP Shirt',
     traitDescription: 'Why yes, this shirt is overpowered.',
     stats: [
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
       { categoryType: 'agility', value: 2 },
     ],
     svg: '/pooly/grid/3-body/body_op.svg',
@@ -455,7 +455,7 @@ export const optionsBody = [
   },
   {
     tier: 0,
-    layer: 1,
+    layer: 3,
     frame: 24,
     expiry: 0,
     traitName: 'Pooly',
@@ -466,9 +466,9 @@ export const optionsBody = [
   },
   {
     tier: 2,
-    layer: 1,
+    layer: 3,
     frame: 25,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Robot',
     traitDescription: 'Not quite armor, but a future suit.',
     stats: [
@@ -480,9 +480,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 26,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Blue Shorts',
     traitDescription: "Just chillin', sporting a blue shorts, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -491,9 +491,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 27,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Green Shorts',
     traitDescription: "Just chillin', sporting a green shorts, and catching some rays.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -502,9 +502,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 28,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Sunset Shorts',
     traitDescription: "Just chillin', sporting a sunset shorts, and catching some rays.",
     stats: [{ categoryType: 'luck', value: 1 }],
@@ -513,9 +513,9 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 29,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Tornado Shirt',
     traitDescription: "Reppin' the Tornado swirl.",
     stats: [{ categoryType: 'defense', value: 2 }],
@@ -524,28 +524,28 @@ export const optionsBody = [
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 30,
-    expiry: 0,
+    expiry: 1682910000,
     traitName: 'Inverted Lobby3 Shirt',
     traitDescription: "Reppin' Lobby3 threads and supporting collective action for the betterment of crypto.",
     stats: [
       { categoryType: 'defense', value: 1 },
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_lobby3_black.svg',
     croppedSVG: '/pooly/cropped/3-body/body_lobby3_black.svg',
   },
   {
     tier: 1,
-    layer: 1,
+    layer: 3,
     frame: 31,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Lobby3 Shirt',
     traitDescription: "Reppin' Lobby3 threads and supporting collective action for the betterment of crypto.",
     stats: [
       { categoryType: 'defense', value: 1 },
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
     ],
     svg: '/pooly/grid/3-body/body_lobby3_white.svg',
     croppedSVG: '/pooly/cropped/3-body/body_lobby3_white.svg',
@@ -555,7 +555,7 @@ export const optionsBody = [
 export const optionsBodyAcc = [
   {
     tier: 0,
-    layer: 8,
+    layer: 4,
     frame: 0,
     expiry: 0,
     traitName: 'None',
@@ -566,9 +566,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Flamingo',
     traitDescription: 'Floating in pool with a feathered friend.',
     stats: [
@@ -580,7 +580,7 @@ export const optionsBodyAcc = [
   },
   {
     tier: 0,
-    layer: 8,
+    layer: 4,
     frame: 2,
     expiry: 0,
     traitName: 'Floatie Blue',
@@ -591,7 +591,7 @@ export const optionsBodyAcc = [
   },
   {
     tier: 0,
-    layer: 8,
+    layer: 4,
     frame: 3,
     expiry: 0,
     traitName: 'Floatie Green',
@@ -602,7 +602,7 @@ export const optionsBodyAcc = [
   },
   {
     tier: 0,
-    layer: 8,
+    layer: 4,
     frame: 4,
     expiry: 0,
     traitName: 'Floatie Pink',
@@ -613,7 +613,7 @@ export const optionsBodyAcc = [
   },
   {
     tier: 0,
-    layer: 8,
+    layer: 4,
     frame: 5,
     expiry: 0,
     traitName: 'Floatie Yellow',
@@ -624,9 +624,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 2,
-    layer: 8,
+    layer: 4,
     frame: 6,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Pooly Chain',
     traitDescription: 'Even a birb can be a little gangsta, sometimes.',
     stats: [
@@ -638,9 +638,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 7,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit And Tie Black And Blue',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -653,9 +653,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 8,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit And Tie Black And Red',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -668,9 +668,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 9,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit And Tie White And Black',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -683,9 +683,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 10,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit And Tie White And Gold',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -698,9 +698,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 11,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit And Tie White And Pink',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -713,9 +713,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 12,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit Black',
     traitDescription: 'Pooly has a dapper side in this suit black.',
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -724,9 +724,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 13,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit Brown',
     traitDescription: 'Pooly has a dapper side in this suit brown.',
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -735,9 +735,9 @@ export const optionsBodyAcc = [
   },
   {
     tier: 1,
-    layer: 8,
+    layer: 4,
     frame: 14,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Suit Tan',
     traitDescription: 'Pooly has a dapper side in this suit tan.',
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -749,9 +749,9 @@ export const optionsBodyAcc = [
 export const optionsHead = [
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 0,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Cooly',
     traitDescription: "Ain't no bird cooler than the cooly Pooly.",
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -760,9 +760,9 @@ export const optionsHead = [
   },
   {
     tier: 2,
-    layer: 2,
+    layer: 5,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Crazy Craw',
     traitDescription: "Bed head is a thing for birbs too, especially when Pooly isn't always a morning birb.",
     stats: [
@@ -774,9 +774,9 @@ export const optionsHead = [
   },
   {
     tier: 2,
-    layer: 2,
+    layer: 5,
     frame: 2,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Kawaii',
     traitDescription: 'Pooly so cute, Pooly so Kawaii (づ｡◕‿‿◕｡)づ',
     stats: [{ categoryType: 'luck', value: 3 }],
@@ -785,7 +785,7 @@ export const optionsHead = [
   },
   {
     tier: 0,
-    layer: 2,
+    layer: 5,
     frame: 3,
     expiry: 0,
     traitName: 'Looking',
@@ -796,9 +796,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 4,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'OP Cooly',
     traitDescription: 'Rose colored glasses? How about Optimistic colored glasses.',
     stats: [{ categoryType: 'charisma', value: 2 }],
@@ -807,9 +807,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 5,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'OP Eyes',
     traitDescription: 'Even Pooly needs to catch a red eye every now and then.',
     stats: [{ categoryType: 'charisma', value: 1 }],
@@ -818,9 +818,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 6,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'OP Glasses',
     traitDescription: 'Rose colored glasses? How about Optimistic colored glasses.',
     stats: [{ categoryType: 'charisma', value: 2 }],
@@ -829,9 +829,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 7,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'OP Pirate',
     traitDescription: 'Them pirates were onto something, switch patch sides, activate night-vision mode.',
     stats: [{ categoryType: 'defense', value: 2 }],
@@ -840,9 +840,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 8,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Pidgeon',
     traitDescription: 'Pooly has a really strange cousin.',
     stats: [{ categoryType: 'luck', value: 1 }],
@@ -851,9 +851,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 9,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Pirate',
     traitDescription: 'Yar beeter keep ya aye our for pirate Pooly.',
     stats: [{ categoryType: 'defense', value: 2 }],
@@ -862,7 +862,7 @@ export const optionsHead = [
   },
   {
     tier: 0,
-    layer: 2,
+    layer: 5,
     frame: 10,
     expiry: 0,
     traitName: 'Pooly',
@@ -873,7 +873,7 @@ export const optionsHead = [
   },
   {
     tier: 0,
-    layer: 2,
+    layer: 5,
     frame: 11,
     expiry: 0,
     traitName: 'Relaxed',
@@ -884,23 +884,23 @@ export const optionsHead = [
   },
   {
     tier: 2,
-    layer: 2,
+    layer: 5,
     frame: 12,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Robo-Pooly',
     traitDescription: 'Pooly, now enhanced with bionic laser vision',
     stats: [
       { categoryType: 'defense', value: 2 },
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
     ],
     svg: '/pooly/grid/5-head/head_robo-pooly.svg',
     croppedSVG: '/pooly/cropped/5-head/head_robo-pooly.svg',
   },
   {
     tier: 2,
-    layer: 2,
+    layer: 5,
     frame: 13,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Scowl',
     traitDescription:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget massa a leo commodo venenatis vel non lacus. Maecenas vel quam consequat, faucibus est ac, iaculis massa.',
@@ -913,9 +913,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 14,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Shocked',
     traitDescription: 'Shocked? As if, hyper focused, pupils pin-pointed, target locked.',
     stats: [{ categoryType: 'agility', value: 1 }],
@@ -924,7 +924,7 @@ export const optionsHead = [
   },
   {
     tier: 0,
-    layer: 2,
+    layer: 5,
     frame: 15,
     expiry: 0,
     traitName: 'Smile',
@@ -935,9 +935,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 16,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Tornado Cooly',
     traitDescription: 'Too cool for most with a hint of Tornado style.',
     stats: [
@@ -949,9 +949,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 17,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Tornado Eyes',
     traitDescription: "Pooly didn't see red, Pooly only saw a Torndao needing saving.",
     stats: [
@@ -963,9 +963,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 18,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Wince',
     traitDescription: 'It was a rough day in court but Pooly will make it.',
     stats: [{ categoryType: 'defense', value: 1 }],
@@ -974,9 +974,9 @@ export const optionsHead = [
   },
   {
     tier: 1,
-    layer: 2,
+    layer: 5,
     frame: 19,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Wink',
     traitDescription: 'A job well done, another day defended.',
     stats: [{ categoryType: 'charisma', value: 2 }],
@@ -1078,7 +1078,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 8,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Cowboy Hat Brown',
     traitDescription: 'Save a horse, defend DeFi.',
     stats: [
@@ -1092,7 +1092,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 9,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Cowboy Hat Tan',
     traitDescription: 'Save a horse, defend DeFi.',
     stats: [
@@ -1106,7 +1106,7 @@ export const optionsHeadAcc = [
     tier: 2,
     layer: 6,
     frame: 10,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Crown',
     traitDescription: 'The power of Pooly is having the royal guard on the right side.',
     stats: [
@@ -1120,7 +1120,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 11,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Eggshell',
     traitDescription: 'Protecc the Pooly with egghead helmet.',
     stats: [{ categoryType: 'defense', value: 2 }],
@@ -1131,7 +1131,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 12,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Giga Brain',
     traitDescription: 'Make Pooly able to out-smart any obstacle in their path.',
     stats: [
@@ -1145,7 +1145,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 13,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Kabosu Hood',
     traitDescription: 'Doge gone it, Pooly gonna be so fly.',
     stats: [
@@ -1159,7 +1159,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 14,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Leprechaun Hat',
     traitDescription: 'Feeling lucky?',
     stats: [{ categoryType: 'luck', value: 2 }],
@@ -1170,7 +1170,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 15,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Party Hat Blue',
     traitDescription: "There's always time to party in the party hat blue to celebrate every win.",
     stats: [{ categoryType: 'agility', value: 1 }],
@@ -1181,7 +1181,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 16,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Party Hat Magenta',
     traitDescription: "There's always time to party in the party hat magenta to celebrate every win.",
     stats: [{ categoryType: 'agility', value: 1 }],
@@ -1192,7 +1192,7 @@ export const optionsHeadAcc = [
     tier: 2,
     layer: 6,
     frame: 17,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Powdered Wig',
     traitDescription: 'Powdered wigs really are all the rage right now.',
     stats: [
@@ -1206,7 +1206,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 18,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Snorkel Blue',
     traitDescription: 'Pooly prepping for the dive with this .',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -1217,7 +1217,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 19,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Snorkel Green',
     traitDescription: 'Pooly prepping for the dive with this .',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -1228,7 +1228,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 20,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Snorkel Pink',
     traitDescription: 'Pooly prepping for the dive with this .',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -1239,7 +1239,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 21,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Snorkel Yellow',
     traitDescription: 'Pooly prepping for the dive with this .',
     stats: [{ categoryType: 'strength', value: 1 }],
@@ -1250,7 +1250,7 @@ export const optionsHeadAcc = [
     tier: 1,
     layer: 6,
     frame: 22,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Top Hat',
     traitDescription: 'With this top hat, Pooly is one step closer to being Tuxedo Mask.',
     stats: [
@@ -1265,7 +1265,7 @@ export const optionsHeadAcc = [
 export const optionsRightWingAcc = [
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 0,
     expiry: 0,
     traitName: 'None',
@@ -1276,9 +1276,9 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 1,
-    layer: 11,
+    layer: 7,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Cane Blue',
     traitDescription: 'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
     stats: [
@@ -1290,13 +1290,13 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 1,
-    layer: 11,
+    layer: 7,
     frame: 2,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Drink',
     traitDescription: 'A tropical drink to break the ice.',
     stats: [
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/8-accessory_right/accessory_right_drink.svg',
@@ -1304,23 +1304,23 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 3,
-    layer: 11,
+    layer: 7,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defender Shield',
     traitDescription: 'Start the shield wall with this Defender Shield.',
     stats: [
       { categoryType: 'defense', value: 3 },
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
     ],
     svg: '/pooly/grid/8-accessory_right/accessory_right_d_shield.svg',
     croppedSVG: '/pooly/cropped/8-accessory_right/accessory_right_d_shield.svg',
   },
   {
     tier: 2,
-    layer: 11,
+    layer: 7,
     frame: 4,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Judges Gavel',
     traitDescription: "Pooly's voice will echo like the smack of the gavel.",
     stats: [
@@ -1332,7 +1332,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 5,
     expiry: 0,
     traitName: 'Pool Noodle Blue',
@@ -1343,7 +1343,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 6,
     expiry: 0,
     traitName: 'Pool Noodle Green',
@@ -1354,7 +1354,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 7,
     expiry: 0,
     traitName: 'Pool Noodle Pink',
@@ -1365,7 +1365,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 8,
     expiry: 0,
     traitName: 'Pool Noodle Yellow',
@@ -1376,9 +1376,9 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 2,
-    layer: 11,
+    layer: 7,
     frame: 9,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Star Wand',
     traitDescription: 'You best be seeing stars, cause Pooly has this star wand instead of a gavel',
     stats: [
@@ -1390,9 +1390,9 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 1,
-    layer: 11,
+    layer: 7,
     frame: 10,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Tornado',
     traitDescription: 'Defending DeFi with the power of a tornado.',
     stats: [
@@ -1404,7 +1404,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 11,
     expiry: 0,
     traitName: 'Trophy',
@@ -1415,7 +1415,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 12,
     expiry: 0,
     traitName: 'Umbrella Blue',
@@ -1426,7 +1426,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 13,
     expiry: 0,
     traitName: 'Umbrella Green',
@@ -1437,7 +1437,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 14,
     expiry: 0,
     traitName: 'Umbrella Pink',
@@ -1448,7 +1448,7 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 0,
-    layer: 11,
+    layer: 7,
     frame: 15,
     expiry: 0,
     traitName: 'Water Bottle',
@@ -1459,23 +1459,23 @@ export const optionsRightWingAcc = [
   },
   {
     tier: 2,
-    layer: 11,
+    layer: 7,
     frame: 16,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Lobby3 Sign',
     traitDescription: 'Some Poolys go to court, other Poolys march on the streets.',
     stats: [
       { categoryType: 'agility', value: 2 },
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
     ],
     svg: '/pooly/grid/8-accessory_right/accessory_right_lobby3_sign.svg',
     croppedSVG: '/pooly/cropped/8-accessory_right/accessory_right_lobby3_sign.svg',
   },
   {
     tier: 3,
-    layer: 11,
+    layer: 7,
     frame: 17,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Lobby3 Briefcase',
     traitDescription: "Birbfren, Pooly Birbfren. I'll see you in court!",
     stats: [
@@ -1490,7 +1490,7 @@ export const optionsRightWingAcc = [
 export const optionsLeftWingAcc = [
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 0,
     expiry: 0,
     traitName: 'None',
@@ -1501,9 +1501,9 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 1,
-    layer: 10,
+    layer: 8,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Cane Blue',
     traitDescription: 'Walk tall, stroll fancy, and pop some heads when Pooly marches.',
     stats: [
@@ -1515,13 +1515,13 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 1,
-    layer: 10,
+    layer: 8,
     frame: 2,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Drink',
     traitDescription: 'A tropical drink to break the ice.',
     stats: [
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
       { categoryType: 'wisdom', value: 1 },
     ],
     svg: '/pooly/grid/7-accessory_left/accessory_left_drink.svg',
@@ -1529,23 +1529,23 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 3,
-    layer: 10,
+    layer: 8,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Defender Shield',
     traitDescription: 'Start the shield wall with this Defender Shield.',
     stats: [
       { categoryType: 'defense', value: 3 },
-      { categoryType: 'export constitution', value: 2 },
+      { categoryType: 'constitution', value: 2 },
     ],
     svg: '/pooly/grid/7-accessory_left/accessory_left_d_shield.svg',
     croppedSVG: '/pooly/cropped/7-accessory_left/accessory_left_d_shield.svg',
   },
   {
     tier: 2,
-    layer: 10,
+    layer: 8,
     frame: 4,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Judges Gavel',
     traitDescription: "Pooly's voice will echo like the smack of the gavel.",
     stats: [
@@ -1557,7 +1557,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 5,
     expiry: 0,
     traitName: 'Pool Noodle Blue',
@@ -1568,7 +1568,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 6,
     expiry: 0,
     traitName: 'Pool Noodle Green',
@@ -1579,7 +1579,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 7,
     expiry: 0,
     traitName: 'Pool Noodle Pink',
@@ -1590,7 +1590,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 8,
     expiry: 0,
     traitName: 'Pool Noodle Yellow',
@@ -1601,7 +1601,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 9,
     expiry: 0,
     traitName: 'Star Wand',
@@ -1613,9 +1613,9 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 1,
-    layer: 10,
+    layer: 8,
     frame: 10,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Tornado',
     traitDescription: 'Defending DeFi with the power of a tornado.',
     stats: [
@@ -1627,7 +1627,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 11,
     expiry: 0,
     traitName: 'Trophy',
@@ -1638,7 +1638,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 12,
     expiry: 0,
     traitName: 'Umbrella Blue',
@@ -1649,7 +1649,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 13,
     expiry: 0,
     traitName: 'Umbrella Green',
@@ -1660,7 +1660,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 14,
     expiry: 0,
     traitName: 'Umbrella Pink',
@@ -1671,7 +1671,7 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 0,
-    layer: 10,
+    layer: 8,
     frame: 15,
     expiry: 0,
     traitName: 'Water Bottle',
@@ -1682,23 +1682,23 @@ export const optionsLeftWingAcc = [
   },
   {
     tier: 2,
-    layer: 10,
+    layer: 8,
     frame: 16,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Lobby3 Sign',
     traitDescription: 'Some Poolys go to court, other Poolys march on the streets.',
     stats: [
       { categoryType: 'agility', value: 2 },
-      { categoryType: 'export constitution', value: 1 },
+      { categoryType: 'constitution', value: 1 },
     ],
     svg: '/pooly/grid/7-accessory_left/accessory_left_lobby3_sign.svg',
     croppedSVG: '/pooly/cropped/7-accessory_left/accessory_left_lobby3_sign.svg',
   },
   {
     tier: 3,
-    layer: 10,
+    layer: 8,
     frame: 17,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Lobby3 Briefcase',
     traitDescription: "Birbfren, Pooly Birbfren. I'll see you in court!",
     stats: [
@@ -1713,7 +1713,7 @@ export const optionsLeftWingAcc = [
 export const optionsFaceAcc = [
   {
     tier: 0,
-    layer: 7,
+    layer: 9,
     frame: 0,
     expiry: 0,
     traitName: 'None',
@@ -1724,9 +1724,9 @@ export const optionsFaceAcc = [
   },
   {
     tier: 0,
-    layer: 7,
+    layer: 9,
     frame: 1,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Bubble Pipe',
     traitDescription: 'Hide Pooly in a cloud of bubbles to escape from prying eyes.',
     stats: [
@@ -1738,9 +1738,9 @@ export const optionsFaceAcc = [
   },
   {
     tier: 0,
-    layer: 7,
+    layer: 9,
     frame: 2,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Love Letter',
     traitDescription: 'Pooly, has a part time delivery service, not just for Kiki.',
     stats: [
@@ -1752,9 +1752,9 @@ export const optionsFaceAcc = [
   },
   {
     tier: 0,
-    layer: 7,
+    layer: 9,
     frame: 3,
-    expiry: 0,
+    expiry: 1688180400,
     traitName: 'Monocle',
     traitDescription: 'Posh Pooly requires a monocle for gestures and emphasis.',
     stats: [
@@ -1766,7 +1766,7 @@ export const optionsFaceAcc = [
   },
   {
     tier: 0,
-    layer: 7,
+    layer: 9,
     frame: 4,
     expiry: 0,
     traitName: 'Smokes',

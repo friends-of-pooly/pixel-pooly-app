@@ -7,7 +7,7 @@ const DEFAULT_BUILDER: any = []
 let strAtom: WritableAtom<Array<any>, SetStateAction<Array<any>>>
 strAtom = atom(DEFAULT_BUILDER)
 if (typeof window !== 'undefined') {
-  strAtom = atom(JSON.parse(window?.localStorage.getItem('tokens') || `${DEFAULT_BUILDER}`))
+  strAtom = atom(window?.localStorage.getItem('tokens') ? JSON.parse(window?.localStorage.getItem('tokens')) : `${DEFAULT_BUILDER}`)
 } else {
   strAtom = atom(DEFAULT_BUILDER)
 }

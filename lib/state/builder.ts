@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 
 import { SetStateAction, WritableAtom, atom, useAtom } from 'jotai'
 
-const DEFAULT_BUILDER = [0, 8, 7, 0, 1, 1, 0, 0, 0, 0, 0, 0]
+const DEFAULT_BUILDER = [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
 
 let strAtom: WritableAtom<number[], SetStateAction<number[]>>
 strAtom = atom(DEFAULT_BUILDER)

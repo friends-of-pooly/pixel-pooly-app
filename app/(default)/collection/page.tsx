@@ -25,17 +25,23 @@ export const PixelPoolyImage = ({ className, tokenId }: PixelPoolyImageProps) =>
 
 export default function Collection({ params }: any) {
   const [tokens] = useTokensWatching()
+  if (!tokens)
+    return (
+      <div className="flex-center flex h-full min-h-[50vh]">
+        <h3 className="text-lg font-normal">You're Pixel Pooly Collection is Empty</h3>
+      </div>
+    )
   return (
-    <div className="container">
+    <div className="container max-w-screen-xl lg:py-20">
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold">Collection</h1>
         <button className="btn btn-indigo">Manually Add Token</button>
       </div>
       <hr className="my-8" />
       <div className="grid grid-cols-12 gap-12">
-        {tokens.map((token) => {
+        {tokens?.map((token, idx) => {
           return (
-            <div className="col-span-12 lg:col-span-4">
+            <div key={idx} className="col-span-12 lg:col-span-4">
               <LinkComponent href={`/token/${token.id}`}>
                 <PixelPoolyImage tokenId={token.id} />
               </LinkComponent>

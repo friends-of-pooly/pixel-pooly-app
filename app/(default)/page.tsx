@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
-import Card from '@/components/shared/card'
 import { LinkComponent } from '@/components/shared/LinkComponent'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/config/design'
 import useScroll from '@/hooks/use-scroll'
