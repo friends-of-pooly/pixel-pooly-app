@@ -30,22 +30,16 @@ export const pixelPoolyItems = [
     elements: optionsBG,
   },
   {
-    layer: 5,
-    title: 'Head',
-    // Icon: PixelHead,
-    elements: optionsHead,
+    layer: 1,
+    title: 'Right',
+    // Icon: PixelRight,
+    elements: optionsRight,
   },
   {
-    layer: 6,
-    title: 'Head Acc',
-    // Icon: PixelHeadAcc,
-    elements: optionsHeadAcc,
-  },
-  {
-    layer: 11,
-    title: 'Face Acc',
-    // Icon: PixelFaceAcc,
-    elements: optionsFaceAcc,
+    layer: 2,
+    title: 'Left',
+    // Icon: PixelLeft,
+    elements: optionsLeft,
   },
   {
     layer: 3,
@@ -60,28 +54,35 @@ export const pixelPoolyItems = [
     elements: optionsBodyAcc,
   },
   {
-    layer: 4,
-    title: 'Left',
-    // Icon: PixelLeft,
-    elements: optionsLeft,
+    layer: 5,
+    title: 'Head',
+    // Icon: PixelHead,
+    elements: optionsHead,
   },
   {
-    layer: 9,
+    layer: 6,
+    title: 'Head Acc',
+    // Icon: PixelHeadAcc,
+    elements: optionsHeadAcc,
+  },
+  {
+    layer: 8,
     title: 'Left Acc',
     // Icon: PixelLeftWingAcc,
     elements: optionsLeftWingAcc,
   },
+
   {
-    layer: 1,
-    title: 'Right',
-    // Icon: PixelRight,
-    elements: optionsRight,
-  },
-  {
-    layer: 10,
+    layer: 9,
     title: 'Right Acc',
     // Icon: PixelRightWingAcc,
     elements: optionsRightWingAcc,
+  },
+  {
+    layer: 10,
+    title: 'Face Acc',
+    // Icon: PixelFaceAcc,
+    elements: optionsFaceAcc,
   },
 ]
 

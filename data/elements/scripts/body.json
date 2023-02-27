@@ -1,7 +1,0 @@
-{
-  "srcFiles": ["./elements/input/1-body/**/*.svg"],
-  "outputDirectory": "./elements/output",
-  "fileName": "body",
-  "typeName": "body",
-  "prefix": "pixel"
-}

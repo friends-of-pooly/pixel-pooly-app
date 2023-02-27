@@ -42,8 +42,8 @@ export const menuMain = [
       {
         label: 'Face',
         alias: 'face',
-        icon: '/pooly/cropped/9-accessory_face/accessory_face_love_letter.svg',
-        layer: 11,
+        icon: '/pooly/cropped/10-accessory_face/accessory_face_love_letter.svg',
+        layer: 10,
       },
       {
         label: 'Body',
@@ -54,14 +54,14 @@ export const menuMain = [
       {
         label: 'Left Wing',
         alias: 'left-wing',
-        icon: '/pooly/cropped/7-accessory_left/accessory_left_d_shield.svg',
-        layer: 9,
+        icon: '/pooly/cropped/8-accessory_left/accessory_left_d_shield.svg',
+        layer: 8,
       },
       {
         label: 'Right Wing',
         alias: 'right-wing',
-        icon: '/pooly/cropped/8-accessory_right/accessory_right_judges_gavel.svg',
-        layer: 10,
+        icon: '/pooly/cropped/9-accessory_right/accessory_right_judges_gavel.svg',
+        layer: 9,
       },
     ],
   },

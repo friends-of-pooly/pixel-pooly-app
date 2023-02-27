@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11" height="8.01" shape-rendering="crispEdges" version="1.1" viewBox="0 -.5 11 8.01" xmlns="http://www.w3.org/2000/svg">
+ <metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
+ <g stroke-width="1.01">
+  <path d="m0 5e-3h11m-6 1h1m3 0h2m-2 1h2m-10 1h1m8 0h1m-11 1h3m6 0h2m-10 1h3m3 0h4m-11 1h4m2 0h3m1 0h1m-11 1h7m1 0h2" stroke="#faf6ef"/>
+  <path d="m1 1.005h1m-2 2h1" stroke="#f3e9e1"/>
+  <path d="m2 1.005h1m1 5h1m4 0h1" stroke="#faf7ef"/>
+  <path d="m3 1.005h2m1 0h2m-6 1h1m2 0h2m-5 1h3m0 3h1" stroke="#e6001a"/>
+  <path d="m8 1.005h1m0 2h1m-10 2h1m9 2h1" stroke="#faf6ee"/>
+  <path d="m1 2.005h1" stroke="#f3e8e1"/>
+  <path d="m3 2.005h1" stroke="#ff3d3d"/>
+  <path d="m4 2.005h1" stroke="#e7001a"/>
+  <path d="m7 2.005h1m-3 1h1m-3 1h1" stroke="#e6001b"/>
+  <path d="m8 2.005h1m-3 1h3m-5 1h4m-4 1h1m1 0h1" stroke="#d40017"/>
+  <path d="m8 4.005h1m-2 3h1" stroke="#fbf6ef"/>
+  <path d="m5 5.005h1" stroke="#d40117"/>
+ </g>
+</svg>

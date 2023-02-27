@@ -1,7 +1,0 @@
-{
-  "srcFiles": ["./elements/input/11-rightWingAcc/**/*.svg"],
-  "outputDirectory": "./elements/output",
-  "fileName": "rightAcc",
-  "typeName": "rightAcc",
-  "prefix": "pixel"
-}
