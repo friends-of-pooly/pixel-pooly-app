@@ -29,10 +29,16 @@ const { chains, provider } = configureChains(CHAINS, [
   // }),
   jsonRpcProvider({
     rpc: () => ({
-      chainId: [31337],
-      http: 'http://127.0.0.1:8545/',
+      chainId: [420],
+      http: 'https://endpoints.omniatech.io/v1/op/goerli/public',
     }),
   }),
+  // jsonRpcProvider({
+  //   rpc: () => ({
+  //     chainId: [31337],
+  //     http: 'http://127.0.0.1:8545/',
+  //   }),
+  // }),
 ])
 
 const appName = 'TurboETH'

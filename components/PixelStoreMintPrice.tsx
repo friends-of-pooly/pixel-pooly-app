@@ -14,7 +14,7 @@ interface PixelStoreMintPriceProps {
 export const PixelStoreMintPrice = ({ className }: PixelStoreMintPriceProps) => {
   const [data] = usePixelPoolyBuilder()
 
-  const contract = useContractAutoLoad('PixelStore', 31337)
+  const contract = useContractAutoLoad('PixelStore')
 
   const price = usePixelStoreGetFramePrices({
     address: contract.address,

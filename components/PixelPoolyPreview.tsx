@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { utils } from 'ethers'
 import { useNetwork } from 'wagmi'
 
+import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { usePixelPoolyRenderPreview } from '@/lib/blockchain'
 import { usePixelPoolyBuilder } from '@/lib/state/builder'
 
@@ -13,10 +14,10 @@ interface PixelPoolyPreviewProps {
 
 export const PixelPoolyPreview = ({ className }: PixelPoolyPreviewProps) => {
   const [data] = usePixelPoolyBuilder()
-  const { chain } = useNetwork()
+
+  const contract = useContractAutoLoad('PixelPooly')
   const txRead = usePixelPoolyRenderPreview({
-    address: '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
-    chainId: chain?.id || 1,
+    address: contract?.address,
     args: [
       utils.solidityPack(['uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8', 'uint8'], data),
     ] as any,

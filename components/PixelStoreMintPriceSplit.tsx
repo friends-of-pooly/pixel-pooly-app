@@ -15,7 +15,7 @@ interface PixelStoreMintPriceSplitProps {
 export const PixelStoreMintPriceSplit = ({ className, percentage = '100' }: PixelStoreMintPriceSplitProps) => {
   const [data] = usePixelPoolyBuilder()
 
-  const contract = useContractAutoLoad('PixelStore', 31337)
+  const contract = useContractAutoLoad('PixelStore')
 
   const price = usePixelStoreGetFramePrices({
     address: contract.address,
