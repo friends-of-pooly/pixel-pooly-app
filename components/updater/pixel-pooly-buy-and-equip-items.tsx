@@ -62,7 +62,7 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
                 return (
                   <div key={index} className="mb-10">
                     <Tabs.Content value={`tab${item.layer}`}>
-                      <PixelPoolyLayerFrameUpdaterList layer={item.layer} items={item.elements} />
+                      <PixelPoolyLayerFrameUpdaterList layer={item.layer} items={item.elements} ownedTraits={unlockedTraitsData} />
                     </Tabs.Content>
                   </div>
                 )
