@@ -1,10 +1,11 @@
 'use client'
 import * as Tabs from '@radix-ui/react-tabs'
+import { BigNumber } from 'ethers'
 
 import MenuDashboardBuilder from '@/components/layout/menu-dashboard-builder'
-import PixelPoolyLayerFrameList from '@/components/PixelPoolyLayerFrameList'
-import PixelPoolyPreview from '@/components/PixelPoolyPreview'
-import PixelPoolyTraitsBoostedPreview from '@/components/PixelPoolyTraitsBoostedPreview'
+import PixelPoolyLayerFrameUpdaterList from '@/components/PixelPoolyLayerFrameUpdaterList'
+import PixelPoolyTraitsUpdaterBoostedPreview from '@/components/PixelPoolyTraitsUpdaterBoostedPreview'
+import PixelPoolyUpdaterPreview from '@/components/PixelPoolyUpdaterPreview'
 import PixelStoreMintButton from '@/components/PixelStoreMintButton'
 import PixelStoreMintPrice from '@/components/PixelStoreMintPrice'
 import PixelStoreMintPriceSplit from '@/components/PixelStoreMintPriceSplit'
@@ -12,8 +13,32 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { DialogHeader } from '@/components/ui/dialog'
 import { Separator } from '@/components/ui/separator'
 import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
+import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
+import { usePixelPoolyStorageGetUnlockedTraits } from '@/lib/blockchain'
 
-export default function PixelPoolyBuyAndEquipItems() {
+interface PixelPoolyBuyAndEquipItemsProps {
+  className?: string
+  tokenId: string
+  character: {
+    frame: number
+    layer: number
+  }[]
+}
+
+export default function PixelPoolyBuyAndEquipItems({ className, tokenId, character }: PixelPoolyBuyAndEquipItemsProps) {
+  // character == currect equipped traits
+
+  // use character to initially set the state of the usePixelPoolyUpdater
+
+  const contractStorage = useContractAutoLoad('PixelPoolyStorage')
+
+  const { data: unlockedTraitsData } = usePixelPoolyStorageGetUnlockedTraits({
+    address: contractStorage?.address,
+    args: [BigNumber.from(tokenId)],
+  })
+
+  // use unlockedTraitsData to filter out the traits from the pixelPoolyItems list
+
   return (
     <section className="block">
       <Tabs.Root defaultValue="tab5">
@@ -25,11 +50,12 @@ export default function PixelPoolyBuyAndEquipItems() {
           </div>
           <div className="col-span-12 lg:col-span-6">
             <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
+              {/* TODO: filter out already owned traits from pixelPoolyItems */}
               {pixelPoolyItems.map((item, index) => {
                 return (
                   <div key={index} className="mb-10">
                     <Tabs.Content value={`tab${item.layer}`}>
-                      <PixelPoolyLayerFrameList layer={item.layer} items={item.elements} />
+                      <PixelPoolyLayerFrameUpdaterList layer={item.layer} items={item.elements} />
                     </Tabs.Content>
                   </div>
                 )
@@ -40,16 +66,16 @@ export default function PixelPoolyBuyAndEquipItems() {
             <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 dark:bg-purple-700">
               <Dialog>
                 <DialogTrigger>
-                  <PixelPoolyPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
+                  <PixelPoolyUpdaterPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
                 </DialogTrigger>
                 <DialogContent className="container">
                   <DialogHeader>
                     <div className="container grid grid-cols-12 gap-5 p-10">
                       <div className="col-span-12 lg:col-span-6">
-                        <PixelPoolyPreview className=" w-full rounded-xl border-4 shadow-2xl" />
+                        <PixelPoolyUpdaterPreview className=" w-full rounded-xl border-4 shadow-2xl" />
                       </div>
                       <div className="col-span-12 lg:col-span-6">
-                        <PixelPoolyTraitsBoostedPreview />
+                        <PixelPoolyTraitsUpdaterBoostedPreview />
                       </div>
                     </div>
                   </DialogHeader>
@@ -57,7 +83,7 @@ export default function PixelPoolyBuyAndEquipItems() {
               </Dialog>
 
               <div className="mt-6 rounded-lg p-4 shadow-xl dark:bg-purple-900">
-                <PixelPoolyTraitsBoostedPreview />
+                <PixelPoolyTraitsUpdaterBoostedPreview />
               </div>
             </div>
             <div className="darK:bg-neutral-900 mt-3 rounded-lg p-4">
