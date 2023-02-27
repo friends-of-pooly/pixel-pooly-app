@@ -23,7 +23,7 @@ export const PixelPoolyTraitsPreview = ({ className }: PixelPoolyTraitsPreviewPr
   const { chain } = useNetwork()
   const contract = useContractAutoLoad('PixelPoolyStorage')
   const traitsFormatted = usePixelPoolyStorageFormatTraitsBytesFromCharacter({
-    address: contract.address,
+    address: contract?.address,
     chainId: chain?.id || 1,
     args: [
       {
@@ -44,7 +44,7 @@ export const PixelPoolyTraitsPreview = ({ className }: PixelPoolyTraitsPreviewPr
   })
 
   const txRead = usePixelPoolyStorageConstructTokenUri({
-    address: contract.address,
+    address: contract?.address,
     chainId: chain?.id || 1,
     args: [BigNumber.from(0), DEFAULT_ARGS as `0x${string}`, traitsFormatted.data as `0x${string}`],
   })

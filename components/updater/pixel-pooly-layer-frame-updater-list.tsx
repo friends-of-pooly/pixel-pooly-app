@@ -46,7 +46,7 @@ export const PixelPoolyLayerFrameUpdaterList = ({ className, items, layer, owned
       {items
         // .filter((t) => ownedTraits.find((o) => o.frame == t.frame && o.layer == t.layer))
         .map((item, index) => {
-          if (ownedTraits.find((o) => o.frame == item.frame && o.layer == item.layer)) {
+          if (ownedTraits?.find((o) => o.frame == item.frame && o.layer == item.layer)) {
             return null
           }
           const itemClasses = classNames(

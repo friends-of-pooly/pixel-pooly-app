@@ -30,7 +30,7 @@ const { chains, provider } = configureChains(CHAINS, [
   jsonRpcProvider({
     rpc: () => ({
       chainId: [420],
-      http: 'https://endpoints.omniatech.io/v1/op/goerli/public',
+      http: 'https://goerli.optimism.io',
     }),
   }),
   // jsonRpcProvider({

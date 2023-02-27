@@ -44,5 +44,5 @@ goerli.iconUrl = '/icons/NetworkEthereumTest.svg'
 sepolia.iconUrl = '/icons/NetworkEthereumTest.svg'
 
 export const ETH_CHAINS = [mainnet, polygon, optimism, arbitrum, goerli]
-export const ETH_CHAINS_PROD = [mainnet, polygon, optimism, arbitrum]
+export const ETH_CHAINS_PROD = [optimismGoerli]
 export const ETH_CHAINS_TEST = [mainnet, polygon, optimism, arbitrum, goerli, sepolia, hardhat, optimismGoerli]
