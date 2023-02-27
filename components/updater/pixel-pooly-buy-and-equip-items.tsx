@@ -22,7 +22,7 @@ import PixelStoreUnlockBatchPriceSplit from './pixels-store-unlock-batch-price-s
 
 interface PixelPoolyBuyAndEquipItemsProps {
   className?: string
-  tokenId: string
+  tokenId: any
   character: {
     frame: number
     layer: number
@@ -34,14 +34,17 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
 
   // use character to initially set the state of the usePixelPoolyUpdater
 
+  console.log(`tokenId: `, tokenId)
+
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
 
   const { data: unlockedTraitsData } = usePixelPoolyStorageGetUnlockedTraits({
     address: contractStorage?.address,
-    args: [BigNumber.from(tokenId)],
+    args: [tokenId],
   })
 
   // use unlockedTraitsData to filter out the traits from the pixelPoolyItems list
+  console.log(`unlockedTraitsData: `, unlockedTraitsData)
 
   return (
     <section className="block">
@@ -59,7 +62,7 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
                 return (
                   <div key={index} className="mb-10">
                     <Tabs.Content value={`tab${item.layer}`}>
-                      <PixelPoolyLayerFrameUpdaterList layer={item.layer} items={item.elements} />
+                      <PixelPoolyLayerFrameUpdaterList layer={item.layer} items={item.elements} ownedTraits={unlockedTraitsData} />
                     </Tabs.Content>
                   </div>
                 )
