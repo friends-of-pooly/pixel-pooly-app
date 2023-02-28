@@ -27,18 +27,18 @@ const { chains, provider } = configureChains(CHAINS, [
   //     http: 'https://sepolia.infura.io/v3/',
   //   }),
   // }),
-  jsonRpcProvider({
-    rpc: () => ({
-      chainId: [420],
-      http: 'https://goerli.optimism.io',
-    }),
-  }),
   // jsonRpcProvider({
   //   rpc: () => ({
-  //     chainId: [31337],
-  //     http: 'http://127.0.0.1:8545/',
+  //     chainId: [420],
+  //     http: 'https://goerli.optimism.io',
   //   }),
   // }),
+  jsonRpcProvider({
+    rpc: () => ({
+      chainId: [31337],
+      http: 'http://127.0.0.1:8545/',
+    }),
+  }),
 ])
 
 const appName = 'TurboETH'

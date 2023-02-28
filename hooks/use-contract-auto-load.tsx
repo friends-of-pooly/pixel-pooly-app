@@ -60,6 +60,15 @@ export function useContractAutoLoad(contract: string, chainId?: number): any {
   }
 }
 
+// deploying "SVGRegistry" deployed at 0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9 with 625401 gas
+// deploying "PixelPoolyAssets" deployed at 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707 with 1769878 gas
+// deploying "PixelStore" deployed at 0x0165878A594ca255338adfa4d48449f69242Eb8F with 1476947 gas
+// deploying "PixelPoolyRender" deployed at 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853 with 1255133 gas
+// deploying "PixelPoolyTraits" deployed at 0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6 with 742950 gas
+// deploying "PixelPoolyStorage" deployed at 0x8A791620dd6260079BF849Dc5567aDC3F2FdC318 with 5170873 gas
+// deploying "PixelPooly" deployed at 0x610178dA211FEF7D417bC0e6FeD39F05609AD788 with 2199124 gas
+// deploying "PixelUniverse" deployed at 0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e with 1263463 gas
+
 //  "svg" deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3 with 279078 gas
 //  "svgUtils" deployed at 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 with 66022 gas
 //  "SVGColor" deployed at 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 with 1126602 gas
