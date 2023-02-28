@@ -12,7 +12,7 @@ import useScroll from '@/hooks/use-scroll'
 export default function Home() {
   const scrolled = useScroll(50)
 
-  const classes = classNames('fixed inset-0 z-0 -mt-32 transition-all', {
+  const classes = classNames('fixed inset-0 z-0 -mt-32 transition-all px-10', {
     'opacity-30': scrolled,
   })
   return (
@@ -38,7 +38,7 @@ export default function Home() {
             }}>
             {/* <img src="/icon-gradient.svg" alt="Turbo ETH" className="mx-auto mb-10 h-20 w-20 rounded-lg" /> */}
             <motion.h1
-              className="text-gradient-primary text-center text-3xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[8rem]"
+              className="text-gradient-primary text-center text-5xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[8rem]"
               variants={FADE_DOWN_ANIMATION_VARIANTS}>
               <Balancer>A Crowd Sourcing Platform for Good</Balancer>
             </motion.h1>
@@ -51,18 +51,18 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <section className="relative flex flex-1 flex-col lg:mt-32">
+      <section className=" relative flex flex-1 flex-col lg:mt-32">
         <div className="container grid max-w-screen-xl grid-cols-12 gap-10 lg:mt-20">
           <div className="col-span-12 md:col-span-6">
             <Image
-              className="w-full rounded-lg border-4 shadow-xl"
+              className="mx-10 w-full rounded-lg border-4 shadow-xl"
               src="/story/washington-shield-stand.png"
               alt="Pixel Pooly"
               width={600}
               height={600}
             />
           </div>
-          <div className="content col-span-12 flex flex-col justify-center md:col-span-6">
+          <div className="content col-span-12 flex flex-col justify-center md:col-span-6 lg:pl-12">
             <div className="my-3">
               <h3 className="mb-2 text-4xl font-bold">🛡 Defending DeFi</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
@@ -88,15 +88,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-1 flex-col lg:mt-32">
+      {/* <section className="relative flex flex-1 flex-col lg:mt-32">
         <div className="container grid max-w-screen-lg grid-cols-12 gap-10 lg:mt-20 lg:gap-y-32">
           <div className="col-span-12 md:col-span-6">
-            <Image
+            <img
               className="w-full rounded-lg border-4 shadow-xl"
               src="/story/pixel-waashington-computer.png"
               alt="Defending DeFi"
-              width={600}
-              height={600}
+              // width={600}
+              // height={600}
             />
           </div>
           <div className="col-span-12 flex flex-col justify-center md:col-span-6">
@@ -113,12 +113,12 @@ export default function Home() {
             </div>
           </div>
           <div className="lg col-span-12 md:col-span-6 lg:order-4">
-            <Image
-              className="w-full rounded-lg border-4 shadow-xl"
+            <img
+              className="w-full max-w-[100%] rounded-lg border-4 shadow-xl"
               src="/story/pixel-washington-night.png"
               alt="Washington D.C. Night Connections"
-              width={600}
-              height={600}
+              // width={600}
+              // height={600}
             />
           </div>
           <div className="col-span-12 flex flex-col justify-center md:col-span-6 lg:order-3">
@@ -135,12 +135,12 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-12 md:col-span-6 lg:order-5">
-            <Image
+            <img
               className="w-full rounded-lg border-4 shadow-xl"
               src="/story/pixel-wallet-info.png"
               alt="Defending DeFi"
-              width={600}
-              height={600}
+              // width={600}
+              // height={600}
             />
           </div>
           <div className="col-span-12 flex flex-col justify-center md:col-span-6 lg:order-6">
@@ -199,7 +199,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="relative flex flex-1 flex-col bg-washingtonSteps bg-cover bg-center lg:mt-32 lg:min-h-[620px]">yo</section>
+      <section className="relative flex flex-1 flex-col bg-washingtonSteps bg-cover bg-center lg:mt-32 lg:min-h-[620px]"></section> */}
     </>
   )
 }

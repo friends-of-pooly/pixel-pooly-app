@@ -26,7 +26,7 @@ export default function RootLayout({ children }: any) {
           are teaming up to <span className="font-bold">#DefendDeFi</span> and secure an Open Web3{' '}
         </span>
         <span className="mx-3">🛡</span>
-        <LinkComponent className="font-bold" href="/season-1">
+        <LinkComponent className="font-bold" href="/poolyverse/season-1">
           Learn More
         </LinkComponent>
       </section>
