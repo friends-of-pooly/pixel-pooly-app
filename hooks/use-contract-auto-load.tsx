@@ -1,31 +1,54 @@
 import { useNetwork } from 'wagmi'
 
-import { pixelStoreABI, pixelUniverseABI } from '@/lib/blockchain'
-
 export function useContractAutoLoad(contract: string, chainId?: number): any {
   const { chain } = useNetwork()
   switch (chainId || chain?.id) {
+    case 10:
+      switch (contract) {
+        case 'PixelPooly':
+          return {
+            address: '0x1af7bBb04793E6eb5F7eCB7A0f5B2f697d0398C4',
+            abi: [],
+          }
+        case 'PixelUniverse':
+          return {
+            address: '0x7A00f743FEE6A88037A2D4f4963c4a87a49e8928',
+            abi: [],
+          }
+        case 'PixelPoolyStorage':
+          return {
+            address: '0xd6537F6C2A2c78438c796A3Db48c985BEE0adDbc',
+            abi: [],
+          }
+        case 'PixelStore':
+          return {
+            address: '0x9F87290F9de941668a8C26BcC04A28e306CDa890',
+            abi: [],
+          }
+        default:
+          throw new Error(`Unknown contract ${contract}`)
+      }
     case 420:
       switch (contract) {
         case 'PixelPooly':
           return {
             address: '0x1af7bBb04793E6eb5F7eCB7A0f5B2f697d0398C4',
-            abi: pixelUniverseABI,
+            abi: [],
           }
         case 'PixelUniverse':
           return {
             address: '0x7A00f743FEE6A88037A2D4f4963c4a87a49e8928',
-            abi: pixelUniverseABI,
+            abi: [],
           }
         case 'PixelPoolyStorage':
           return {
             address: '0xd6537F6C2A2c78438c796A3Db48c985BEE0adDbc',
-            abi: pixelStoreABI,
+            abi: [],
           }
         case 'PixelStore':
           return {
             address: '0x9F87290F9de941668a8C26BcC04A28e306CDa890',
-            abi: pixelStoreABI,
+            abi: [],
           }
         default:
           throw new Error(`Unknown contract ${contract}`)
@@ -35,22 +58,22 @@ export function useContractAutoLoad(contract: string, chainId?: number): any {
         case 'PixelPooly':
           return {
             address: '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
-            abi: pixelUniverseABI,
+            abi: [],
           }
         case 'PixelUniverse':
           return {
             address: '0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e',
-            abi: pixelUniverseABI,
+            abi: [],
           }
         case 'PixelPoolyStorage':
           return {
             address: '0x8A791620dd6260079BF849Dc5567aDC3F2FdC318',
-            abi: pixelStoreABI,
+            abi: [],
           }
         case 'PixelStore':
           return {
             address: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
-            abi: pixelStoreABI,
+            abi: [],
           }
         default:
           throw new Error(`Unknown contract ${contract}`)

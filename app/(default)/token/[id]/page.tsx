@@ -26,8 +26,6 @@ export default function Home({ params }: any) {
   const { data: ownerData } = usePixelPoolyOwnerOf({ address: contract?.address, args: [params?.id] })
   const { data } = useERC721TokenURIFormatted(contract?.address, params?.id)
 
-  console.log(`data`, data)
-
   const { data: data2, isSuccess: isSuccess2 } = usePixelPoolyStorageGetCharacter({
     address: contractStorage?.address,
     args: [params?.id],

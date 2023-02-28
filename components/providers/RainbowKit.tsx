@@ -18,9 +18,9 @@ interface Props {
 
 const CHAINS = process.env.NODE_ENV === 'production' ? ETH_CHAINS_PROD : ETH_CHAINS_TEST
 const { chains, provider } = configureChains(CHAINS, [
-  // alchemyProvider({
-  //   apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY as string,
-  // }),
+  alchemyProvider({
+    apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY as string,
+  }),
   // jsonRpcProvider({
   //   rpc: () => ({
   //     chainId: [11155111],
@@ -33,12 +33,12 @@ const { chains, provider } = configureChains(CHAINS, [
   //     http: 'https://opt-goerli.g.alchemy.com/v2/jxz_APcJOtV1Of7l6dEIpM6qf8Epi1Q9',
   //   }),
   // }),
-  jsonRpcProvider({
-    rpc: () => ({
-      chainId: [31337],
-      http: 'http://127.0.0.1:8545/',
-    }),
-  }),
+  // jsonRpcProvider({
+  //   rpc: () => ({
+  //     chainId: [31337],
+  //     http: 'http://127.0.0.1:8545/',
+  //   }),
+  // }),
 ])
 
 const appName = 'TurboETH'

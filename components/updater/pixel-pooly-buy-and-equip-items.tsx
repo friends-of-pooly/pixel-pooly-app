@@ -30,21 +30,13 @@ interface PixelPoolyBuyAndEquipItemsProps {
 }
 
 export default function PixelPoolyBuyAndEquipItems({ className, tokenId, character }: PixelPoolyBuyAndEquipItemsProps) {
-  // character == currect equipped traits
-
   // use character to initially set the state of the usePixelPoolyUpdater
-
-  console.log(`tokenId: `, tokenId)
-
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
 
   const { data: unlockedTraitsData } = usePixelPoolyStorageGetUnlockedTraits({
     address: contractStorage?.address,
     args: [tokenId],
   })
-
-  // use unlockedTraitsData to filter out the traits from the pixelPoolyItems list
-  console.log(`unlockedTraitsData: `, unlockedTraitsData)
 
   return (
     <section className="block">
