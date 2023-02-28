@@ -35,7 +35,6 @@ export default function Collection({ params }: any) {
     <div className="container max-w-screen-xl lg:py-20">
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold">Collection</h1>
-        <button className="btn btn-indigo">Manually Add Token</button>
       </div>
       <hr className="my-8" />
       <div className="grid grid-cols-12 gap-12">
