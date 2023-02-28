@@ -65,12 +65,16 @@ export const PixelPoolyLayerFrameUpdaterList = ({ className, items, layer, owned
                 <h3 className="mb-3 text-2xl font-bold">{item.traitName}</h3>
                 <p className="text-sm">{item.traitDescription}</p>
                 <span className="tag tag-green mt-2 inline-block font-bold"> {tierPrices[item.tier]} ETH</span>
-                {!item.expiry ? null : (
-                  <span className="mt-2 inline-block text-xs font-medium">
-                    Expires: <TimeFromEpoch epoch={item.expiry} />{' '}
-                  </span>
-                )}
               </div>
+              {!item.expiry ? null : (
+                <div className="col-span-12 w-full text-left">
+                  <span className="tag tag-red w-fulll mt-2 inline-block text-xs font-medium">
+                    <span className="text-xs">
+                      On Sale Until: <TimeFromEpoch epoch={item.expiry} />{' '}
+                    </span>
+                  </span>
+                </div>
+              )}
             </div>
           )
         })}

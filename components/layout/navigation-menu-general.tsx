@@ -66,7 +66,7 @@ export function NavigationMenuGeneral() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Friends</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
@@ -82,7 +82,7 @@ export function NavigationMenuGeneral() {
           <Link href="/guide" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Guide</NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   )

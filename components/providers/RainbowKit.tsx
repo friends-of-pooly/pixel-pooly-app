@@ -27,12 +27,12 @@ const { chains, provider } = configureChains(CHAINS, [
   //     http: 'https://sepolia.infura.io/v3/',
   //   }),
   // }),
-  // jsonRpcProvider({
-  //   rpc: () => ({
-  //     chainId: [420],
-  //     http: 'https://opt-goerli.g.alchemy.com/v2/jxz_APcJOtV1Of7l6dEIpM6qf8Epi1Q9',
-  //   }),
-  // }),
+  jsonRpcProvider({
+    rpc: () => ({
+      chainId: [420],
+      http: 'https://goerli.optimism.io',
+    }),
+  }),
   // jsonRpcProvider({
   //   rpc: () => ({
   //     chainId: [31337],
@@ -41,7 +41,7 @@ const { chains, provider } = configureChains(CHAINS, [
   // }),
 ])
 
-const appName = 'TurboETH'
+const appName = 'Pixel Pooly'
 
 const connectors = connectorsForWallets([
   {
