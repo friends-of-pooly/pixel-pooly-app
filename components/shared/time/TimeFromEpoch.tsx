@@ -12,7 +12,7 @@ export const TimeFromEpoch = ({ className, epoch }: TimeFromEpochProps) => {
   const [timestamp, setTimestamp] = React.useState<any>()
   React.useEffect(() => {
     if (epoch) {
-      setTimestamp(DateTime.fromSeconds(Number(epoch)).toLocaleString(DateTime.DATETIME_MED))
+      setTimestamp(DateTime.fromSeconds(Number(epoch)).toLocaleString(DateTime.DATE_MED))
     }
   }, [])
   const containerClassName = classNames(className, 'TimeFromEpoch')
