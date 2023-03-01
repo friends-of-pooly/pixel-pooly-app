@@ -1,25 +1,16 @@
 // @ts-nocheck
 'use client'
-import classNames from 'clsx'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
-import { LinkComponent } from '@/components/shared/LinkComponent'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/config/design'
 import useScroll from '@/hooks/use-scroll'
 
 export default function Home() {
   const scrolled = useScroll(50)
 
-  const classes = classNames('fixed inset-0 z-0 -mt-32 transition-all px-10', {
-    'opacity-30': scrolled,
-  })
   return (
     <>
-      <div className={classes}>
-        <Image src="/img/dome-grid.svg" alt="Dome Grid" layout="fill" objectFit="cover" objectPosition="center" quality={100} priority />
-      </div>
       <div className="relative flex flex-1 pt-12 lg:pt-32">
         <div className="flex-center flex h-full flex-1 flex-col items-center justify-center text-center">
           <motion.div

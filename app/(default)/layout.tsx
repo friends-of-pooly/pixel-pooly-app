@@ -14,7 +14,7 @@ export default function RootLayout({ children }: any) {
         <main className="my-32 flex flex-1 flex-col md:px-0 lg:my-20 lg:py-0">{children}</main>
         <Footer />
       </div>
-      <section className="bg-gradient-color fixed inset-x-0 bottom-0 z-50 flex justify-center p-2 px-6">
+      {/* <section className="bg-gradient-color fixed inset-x-0 bottom-0 z-50 flex flex-col items-center justify-center p-2 px-6 lg:flex-row">
         <span className="text-center">
           <LinkComponent href="https://friendsofpooly.com" className="font-bold">
             Friends of Pooly
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: any) {
         <LinkComponent className="font-bold" href="/poolyverse/season-1">
           Learn More
         </LinkComponent>
-      </section>
+      </section> */}
     </>
   )
 }
