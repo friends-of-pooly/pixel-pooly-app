@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 dark:bg-purple-700">
                   <Dialog>
                     <DialogTrigger>
-                      <PixelPoolyPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
+                      <PixelPoolyPreview className="w-full rounded-xl border-4 shadow-2xl lg:-mt-20" />
                     </DialogTrigger>
                     <DialogContent className="container">
                       <DialogHeader>

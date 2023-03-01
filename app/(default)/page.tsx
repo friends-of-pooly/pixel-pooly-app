@@ -51,15 +51,15 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <section className=" relative flex flex-1 flex-col lg:mt-32">
-        <div className="container grid max-w-screen-xl grid-cols-12 gap-10 lg:mt-20">
-          <div className="col-span-12 md:col-span-6">
-            <Image
-              className="mx-10 w-full rounded-lg border-4 shadow-xl"
+      <section className=" relative my-10 flex flex-1 flex-col lg:my-32">
+        <div className="container grid max-w-screen-xl grid-cols-12 lg:mt-20 lg:gap-10">
+          <div className="col-span-12 text-center md:col-span-6 lg:px-10">
+            <img
+              className=" mx-auto w-3/4 rounded-lg border-2 shadow-xl lg:w-full"
               src="/story/washington-shield-stand.png"
               alt="Pixel Pooly"
-              width={600}
-              height={600}
+              // width={600}
+              // height={600}
             />
           </div>
           <div className="content col-span-12 flex flex-col justify-center md:col-span-6 lg:pl-12">
