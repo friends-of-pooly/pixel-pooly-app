@@ -28,7 +28,7 @@ export default function Collection({ params }: any) {
   if (!tokens)
     return (
       <div className="flex-center flex h-full min-h-[50vh]">
-        <h3 className="text-lg font-normal">You're Pixel Pooly Collection is Empty</h3>
+        <h3 className="text-lg font-normal">Your Pixel Pooly Collection is Empty</h3>
       </div>
     )
   return (
