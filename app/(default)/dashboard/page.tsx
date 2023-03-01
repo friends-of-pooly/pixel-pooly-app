@@ -27,12 +27,12 @@ export default function Home() {
             </Tabs.List>
           </div>
           <div className="col-span-12 lg:col-span-6">
-            <div className="bg-gradient-color mb-5 flex items-center justify-between rounded-md py-3 px-4 shadow-md">
+            {/* <div className="bg-gradient-color mb-5 flex items-center justify-between rounded-md py-3 px-4 shadow-md">
               <span className="">Handcraft a PixelPooly and contribute to future of DeFi</span>
               <LinkComponent className="font-bold" href="/guide">
                 Guide
               </LinkComponent>
-            </div>
+            </div> */}
             <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
               {pixelPoolyItems.map((item, index) => {
                 return (
