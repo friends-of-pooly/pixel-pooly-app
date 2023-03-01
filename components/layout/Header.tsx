@@ -34,7 +34,7 @@ export function Header(props: Props) {
   return (
     <header className={classes}>
       <ResponsiveMobileAndDesktop>
-        <LinkComponent href="/" className="flex flex-1 items-center ">
+        <LinkComponent href="/" className="flex min-w-[32px] flex-1 items-center">
           <BranchColorMode>
             <Image alt="Logo" src="/logo-dark.png" width={32} height={32} />
             <Image alt="Logo" src="/logo-white.png" width={32} height={32} />
@@ -60,7 +60,7 @@ export function Header(props: Props) {
           </LinkComponent>
         </ResponsiveMobileAndDesktop>
         <LinkComponent className="flex items-center" href="/dashboard">
-          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Enter App</button>
+          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">App</button>
         </LinkComponent>
         <WalletConnect />
         <ThemeToggle />

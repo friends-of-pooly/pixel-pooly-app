@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
+import { LinkComponent } from '@/components/shared/LinkComponent'
 import { FADE_DOWN_ANIMATION_VARIANTS } from '@/config/design'
 import useScroll from '@/hooks/use-scroll'
 
@@ -39,12 +40,15 @@ export default function Home() {
                 difference.
               </Balancer>
             </motion.p>
+            <LinkComponent className="btn-emerald btn-pill btn mt-4 font-bold " href="/poolyverse/season-1">
+              Season 1 - Partnership with Lobby3
+            </LinkComponent>
           </motion.div>
         </div>
       </div>
       <section className=" relative my-10 flex flex-1 flex-col lg:my-32">
         <div className="container grid max-w-screen-xl grid-cols-12 lg:mt-20 lg:gap-10">
-          <div className="col-span-12 text-center md:col-span-6 lg:px-10">
+          <div className="flex-center col-span-12 flex text-center md:col-span-6 lg:px-10">
             <img
               className=" mx-auto w-3/4 rounded-lg border-2 shadow-xl lg:w-full"
               src="/story/washington-shield-stand.png"
