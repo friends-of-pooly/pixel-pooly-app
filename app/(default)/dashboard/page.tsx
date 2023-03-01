@@ -48,16 +48,16 @@ export default function Home() {
           <div className="col-span-12 lg:col-span-3">
             <BranchIsWalletConnected>
               <>
-                <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 dark:bg-purple-700">
+                <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 text-center dark:bg-purple-700">
                   <Dialog>
                     <DialogTrigger>
-                      <PixelPoolyPreview className="w-full rounded-xl border-4 shadow-2xl lg:-mt-20" />
+                      <PixelPoolyPreview className="mx-auto w-full rounded-xl border-4 shadow-2xl lg:-mt-20" />
                     </DialogTrigger>
                     <DialogContent className="container">
                       <DialogHeader>
                         <div className="container grid grid-cols-12 gap-5 p-10">
                           <div className="col-span-12 lg:col-span-6">
-                            <PixelPoolyPreview className=" w-full rounded-xl border-4 shadow-2xl" />
+                            <PixelPoolyPreview className="w-full rounded-xl border-4 shadow-2xl" />
                           </div>
                           <div className="col-span-12 lg:col-span-6">
                             <PixelPoolyTraitsBoostedPreview />
