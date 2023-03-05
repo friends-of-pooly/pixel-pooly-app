@@ -16,13 +16,13 @@ interface SiteConfig {
   }
 }
 
-export const SITE_CANONICAL = 'https://test.poolypals.com'
+export const SITE_CANONICAL = 'https://poolypals.com'
 
 export const siteConfig: SiteConfig = {
   name: 'Pixel Pooly',
   title: 'Pixel Pooly - Defending DeFi',
   emoji: '🪶',
-  description: 'Securing an Open Web3 through the power of Community',
+  description: 'A Crowd Sourcing Platform for Good. Securing an Open Web3 through the power of Community',
   companyName: 'Friends of Pooly, Inc',
   previewImg: `${SITE_CANONICAL}/preview.png`,
   localeDefault: 'en',
