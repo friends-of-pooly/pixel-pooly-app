@@ -20,19 +20,13 @@ export default function Home() {
   return (
     <section className="block pt-10 lg:pt-32">
       <Tabs.Root defaultValue="tab5">
-        <div className="max-w-screen-3xl container grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-3">
+        <div className="container grid grid-cols-12 gap-10">
+          <div className="col-span-10 lg:col-span-3">
             <Tabs.List>
               <MenuDashboardBuilder />
             </Tabs.List>
           </div>
-          <div className="col-span-12 lg:col-span-6">
-            {/* <div className="bg-gradient-color mb-5 flex items-center justify-between rounded-md py-3 px-4 shadow-md">
-              <span className="">Handcraft a PixelPooly and contribute to future of DeFi</span>
-              <LinkComponent className="font-bold" href="/guide">
-                Guide
-              </LinkComponent>
-            </div> */}
+          <div className="col-span-10 lg:col-span-6">
             <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
               {pixelPoolyItems.map((item, index) => {
                 return (
@@ -45,7 +39,7 @@ export default function Home() {
               })}
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-3">
+          <div className="col-span-10 lg:col-span-3">
             <BranchIsWalletConnected>
               <>
                 <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 text-center dark:bg-purple-700">
