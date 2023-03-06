@@ -10,7 +10,7 @@ export default function Home() {
   const contractPooly = useContractAutoLoad('PixelPooly')
 
   const { data: totalSupplyData } = usePixelPoolyTotalSupply({ address: contractPooly?.address })
-  const { data: totalETHData } = usePixelStoreRead({ address: contractStore?.address, functionName: 'totalReceived' })
+  const { data: totalETHData, isSuccess } = usePixelStoreRead({ address: contractStore?.address, functionName: 'totalReceived' })
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function Home() {
             <h3 className="text-lg font-normal">Mints</h3>
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <span className="text-6xl font-bold">{ethers.utils.formatEther(totalETHData)} ETH</span>
+            <span className="text-6xl font-bold">{isSuccess && totalETHData ? ethers.utils.formatEther(totalETHData) : '...'} ETH</span>
             <h3 className="text-lg font-normal">Raised</h3>
           </div>
         </div>
