@@ -27,8 +27,6 @@ export default function Collection({ params }: any) {
     }
   })
 
-  console.log(data, 'dataPOOLY')
-
   if (!data?.ownedNfts)
     return (
       <div className="flex-center flex h-full min-h-[50vh]">

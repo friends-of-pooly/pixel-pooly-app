@@ -32,16 +32,7 @@ export const PixelStoreMintButton = ({ className, label = 'Mint' }: PixelStoreMi
     overrides: {
       value: price?.data?.reduce((acc: BigNumber, val: BigNumber) => acc.add(val), BigNumber.from('0')),
     },
-    onMutate: (event) => {
-      console.log(event, 'mutate')
-    },
-    onError: (err) => {
-      console.log(err)
-    },
   })
-
-  console.log(status, 'status')
-  console.log(error, 'error')
 
   useAddMintedToken(data?.hash as string)
 
