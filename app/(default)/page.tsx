@@ -32,21 +32,26 @@ export default function Home() {
             <motion.h1
               className="text-gradient-primary text-center text-5xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-8xl md:leading-[8rem]"
               variants={FADE_DOWN_ANIMATION_VARIANTS}>
-              <Balancer>A Crowd Sourcing Platform for Good</Balancer>
+              <Balancer>Raising Funds for DeFi Lobbyists in Washington D.C.</Balancer>
+              {/* <Balancer>A Crowd Sourcing Platform for Good</Balancer> */}
             </motion.h1>
             <motion.p className="mt-6 text-center text-gray-700 dark:text-gray-200 md:text-xl" variants={FADE_DOWN_ANIMATION_VARIANTS}>
               <Balancer className="text-2xl leading-8">
-                Pixel Pooly is a community of artists, designers, and developers who are passionate about creating digital collectibles that make a
-                difference.
+                In Season 1 of Pixel Pooly, 80% of the contributions will be streamed directly to Lobby3.
               </Balancer>
             </motion.p>
-            <LinkComponent className="btn-emerald btn-pill btn mt-4 font-bold " href="/poolyverse/season-1">
-              Season 1 - Partnership with Lobby3
-            </LinkComponent>
+            <div className="mt-8 flex items-center justify-center gap-3 ">
+              <LinkComponent className="flex items-center" href="/dashboard">
+                <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6">Pixel Pooly Builder</button>
+              </LinkComponent>
+              <LinkComponent className="btn-emerald btn-pill btn font-bold " href="/poolyverse/season-1">
+                Partnership with Lobby3
+              </LinkComponent>
+            </div>
           </motion.div>
         </div>
       </div>
-      <section className=" relative my-10 flex flex-1 flex-col lg:my-32">
+      {/* <section className=" relative my-10 flex flex-1 flex-col lg:my-32">
         <div className="container grid max-w-screen-xl grid-cols-12 lg:mt-20 lg:gap-10">
           <div className="flex-center col-span-12 flex text-center md:col-span-6 lg:px-10">
             <img
@@ -61,8 +66,8 @@ export default function Home() {
             <div className="my-3">
               <h3 className="mb-2 text-4xl font-bold">🛡 Defending DeFi</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
-                We believe that DeFi is critical to the success of the Open Web3, and are working to promote its adoption and use. By supporting DeFi
-                projects and advocating for its importance, Friends of Pooly is helping to build a more resilient and decentralized financial system.
+                DeFi is critical to the success of the Open Web3, and are working to promote its adoption and use. By supporting DeFi projects and
+                advocating for its importance, Friends of Pooly is helping to build a more resilient and decentralized financial system.
               </p>
             </div>
             <div className="my-3">
@@ -75,13 +80,13 @@ export default function Home() {
             <div className="my-3">
               <h3 className="mb-2 text-4xl font-bold">🌐 Network State Infrastructure</h3>
               <p className="text-neutral-600 dark:text-neutral-100">
-                We believe that education is critical to promoting the adoption and use of DeFi and the Open Web3. By advocating for these values and
-                educating the broader public about their importance, Friends of Pooly is helping to build a more informed and engaged community.
+                Education is essential to promoting the adoption and use of DeFi and the Open Web3. By advocating for these values and educating the
+                broader public about their importance, Friends of Pooly is helping to build a more informed and engaged community.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="relative flex flex-1 flex-col lg:mt-32">
         <div className="container grid max-w-screen-lg grid-cols-12 gap-10 lg:mt-20 lg:gap-y-32">

@@ -26,21 +26,34 @@ export const PixelStoreMintButton = ({ className, label = 'Mint' }: PixelStoreMi
     args: [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], itemSelection],
   })
 
-  const { write, data, error } = usePixelUniverseMintWithFrames({
+  const { write, data, status, error } = usePixelUniverseMintWithFrames({
     address: contract?.address,
     args: [address, itemSelection],
     overrides: {
       value: price?.data?.reduce((acc: BigNumber, val: BigNumber) => acc.add(val), BigNumber.from('0')),
     },
+    onMutate: (event) => {
+      console.log(event, 'mutate')
+    },
+    onError: (err) => {
+      console.log(err)
+    },
   })
+
+  console.log(status, 'status')
+  console.log(error, 'error')
 
   useAddMintedToken(data?.hash as string)
 
-  const classes = classNames(className, 'PixelStoreMintButton', 'btn')
+  const classes = classNames(className, 'PixelStoreMintButton', 'btn mb-2')
   return (
-    <button onClick={write} className={classes}>
-      {label}
-    </button>
+    <>
+      <button onClick={write} className={classes}>
+        {status == 'loading' ? 'Executing Transaction' : label}
+      </button>
+      {status === 'error' && error?.code == 4001 && <div className="text-center text-red-500">{error?.message}</div>}
+      {status === 'error' && error?.code != 4001 && <div className="text-center text-red-500">Insufficient Balance</div>}
+    </>
   )
 }
 
