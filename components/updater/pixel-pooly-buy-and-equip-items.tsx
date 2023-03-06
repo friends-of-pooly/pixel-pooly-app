@@ -41,13 +41,13 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
   return (
     <section className="block">
       <Tabs.Root defaultValue="tab5">
-        <div className="max-w-screen-3xl container grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-3">
+        <div className="container grid grid-cols-12 gap-10">
+          <div className="col-span-9 lg:col-span-3">
             <Tabs.List>
               <MenuDashboardBuilder />
             </Tabs.List>
           </div>
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-9 lg:col-span-6">
             <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
               {/* TODO: filter out already owned traits from pixelPoolyItems */}
               {pixelPoolyItems.map((item, index) => {
@@ -61,7 +61,7 @@ export default function PixelPoolyBuyAndEquipItems({ className, tokenId, charact
               })}
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-3">
+          <div className="col-span-9 pt-8 lg:col-span-3">
             <div className="bg-gradient-color min-h-[300px] rounded-xl rounded-t-3xl p-6 dark:bg-purple-700">
               <PixelPoolyUpdaterPreview className="-mt-20 w-full rounded-xl border-4 shadow-2xl" />
               <div className="mt-6 rounded-lg p-4 shadow-xl dark:bg-purple-900">

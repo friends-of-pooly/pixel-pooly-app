@@ -50,7 +50,7 @@ export const PixelPoolyLayerFrameUpdaterList = ({ className, items, layer, owned
             return null
           }
           const itemClasses = classNames(
-            'col-span-6 grid cursor-pointer grid-cols-12 gap-x-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 p-4 dark:hover:bg-neutral-900 dark:bg-neutral-800',
+            'col-span-8 lg:col-span-6 grid cursor-pointer grid-cols-12 gap-x-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 p-4 dark:hover:bg-neutral-900 dark:bg-neutral-800',
             {
               'bg-gradient-color': _data[layer] == item.frame,
             }

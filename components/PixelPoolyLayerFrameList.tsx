@@ -32,7 +32,7 @@ export const PixelPoolyLayerFrameList = ({ className, items, layer }: PixelPooly
     <div className={classes}>
       {items.map((item, index) => {
         const itemClasses = classNames(
-          'col-span-12 lg:col-span-6 grid cursor-pointer grid-cols-12 gap-x-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 p-4 dark:hover:bg-neutral-900 dark:bg-neutral-800',
+          'col-span-9 lg:col-span-6 grid cursor-pointer grid-cols-12 gap-x-4 rounded-lg bg-neutral-100 hover:bg-neutral-200 p-4 dark:hover:bg-neutral-900 dark:bg-neutral-800',
           {
             'bg-gradient-color': _data[layer] == item.frame,
           }
