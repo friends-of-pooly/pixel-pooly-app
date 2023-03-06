@@ -29,6 +29,6 @@ export const siteConfig: SiteConfig = {
   links: {
     twitter: 'https://twitter.com/FriendsOfPooly',
     github: 'https://github.com/friends-of-pooly',
-    discord: 'https://discord.gg/friendsofpooly',
+    discord: 'https://discord.gg/6gAKsTDje8',
   },
 }

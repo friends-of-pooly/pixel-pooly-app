@@ -22,11 +22,11 @@ export function Footer(props: Props) {
         Built using ⚡️TurboETH
       </a>
       <div className="mt-2 flex items-center">
-        <LinkComponent href={`https://github.com/${siteConfig.links.discord}`}>
+        <LinkComponent href={siteConfig.links.discord}>
           <FaDiscord />
         </LinkComponent>
         <div className="mx-2" />
-        <LinkComponent href={`https://twitter.com/${siteConfig.links.twitter}`}>
+        <LinkComponent href={siteConfig.links.twitter}>
           <FaTwitter />
         </LinkComponent>
       </div>
