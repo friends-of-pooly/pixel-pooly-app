@@ -1,31 +1,33 @@
 'use client'
 
-import classNames from 'clsx'
+import { useAccount, useChainId, useQuery } from 'wagmi'
 
 import { LinkComponent } from '@/components/shared/LinkComponent'
+import { alchemyOptimism, alchemyOptimismTestnet } from '@/data/alchemy'
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
-import { useERC721TokenURIFormatted } from '@/hooks/use-erc721-token-uri-formatted'
 import { useTokensWatching } from '@/lib/state/token'
 
-interface PixelPoolyImageProps {
-  className?: string
-  tokenId: string
-}
-
-export const PixelPoolyImage = ({ className, tokenId }: PixelPoolyImageProps) => {
-  const contract = useContractAutoLoad('PixelPooly')
-  const { data } = useERC721TokenURIFormatted(contract?.address, tokenId)
-  const classes = classNames(className, 'PixelPoolyImage')
-  return (
-    <div className={classes}>
-      <img src={data?.image} className="w-full rounded-lg border-2 shadow-lg " />
-    </div>
-  )
-}
-
 export default function Collection({ params }: any) {
+  const contract = useContractAutoLoad('PixelPooly')
+  const chainId = useChainId()
   const [tokens] = useTokensWatching()
-  if (!tokens)
+  const { address } = useAccount()
+
+  const { data } = useQuery(['collection', params, chainId], async () => {
+    if (chainId == 10) {
+      const res = alchemyOptimism.nft.getNftsForOwner(address as string, {
+        contractAddresses: [contract.address],
+      })
+      return res
+    } else {
+      const res = alchemyOptimismTestnet.nft.getNftsForOwner(address as string, {
+        contractAddresses: [contract.address],
+      })
+      return res
+    }
+  })
+
+  if (!data?.ownedNfts)
     return (
       <div className="flex-center flex h-full min-h-[50vh]">
         <h3 className="text-lg font-normal">Your Pixel Pooly Collection is Empty</h3>
@@ -38,12 +40,14 @@ export default function Collection({ params }: any) {
       </div>
       <hr className="my-8" />
       <div className="grid grid-cols-12 gap-12">
-        {tokens?.map((token, idx) => {
+        {data?.ownedNfts?.map((token, idx) => {
           return (
-            <div key={idx} className="col-span-12 lg:col-span-4">
-              <LinkComponent href={`/token/${token.id}`}>
-                <PixelPoolyImage tokenId={token.id} />
+            <div key={idx} className="card col-span-12 lg:col-span-4">
+              <LinkComponent href={`/token/${token.tokenId}`}>
+                <img src={token?.rawMetadata?.image} className="w-full rounded-lg border-2 shadow-lg " />
               </LinkComponent>
+              <h3 className="mb-2 mt-3 text-2xl font-bold">{token?.rawMetadata?.name}</h3>
+              <p className="text-lg font-normal">{token?.rawMetadata?.description}</p>
             </div>
           )
         })}

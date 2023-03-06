@@ -60,7 +60,7 @@ export function Header(props: Props) {
           </LinkComponent>
         </ResponsiveMobileAndDesktop>
         <LinkComponent className="flex items-center" href="/dashboard">
-          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">App</button>
+          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Builder</button>
         </LinkComponent>
         <WalletConnect />
         <ThemeToggle />

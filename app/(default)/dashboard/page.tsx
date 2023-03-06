@@ -18,7 +18,7 @@ import pixelPoolyItems from '@/config/pixel-pooly-items-v2'
 
 export default function Home() {
   return (
-    <section className="block pt-10 lg:pt-32">
+    <section className="lg:pt-20g block pt-10">
       <Tabs.Root defaultValue="tab5">
         <div className="max-w-screen-3xl container grid grid-cols-12 gap-10">
           <div className="col-span-12 lg:col-span-3">
@@ -33,7 +33,7 @@ export default function Home() {
                 Guide
               </LinkComponent>
             </div> */}
-            <div className=" max-h-[80vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
+            <div className=" max-h-[90vh] overflow-auto  rounded-lg bg-neutral-50 px-8 dark:bg-neutral-700 ">
               {pixelPoolyItems.map((item, index) => {
                 return (
                   <div key={index} className="mb-10">
