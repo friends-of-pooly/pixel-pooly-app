@@ -62,6 +62,9 @@ export function Header(props: Props) {
         <LinkComponent className="flex items-center" href="/dashboard">
           <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">App</button>
         </LinkComponent>
+        <LinkComponent className="flex items-center" href="/analytics">
+          <button className="btn btn-purple btn-pill bg-gradient-color w-full py-6 text-sm">Stats</button>
+        </LinkComponent>
         <WalletConnect />
         <ThemeToggle />
       </div>

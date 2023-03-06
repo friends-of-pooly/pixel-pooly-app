@@ -1,6 +1,17 @@
 'use client'
 
+import { ethers } from 'ethers'
+
+import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
+import { usePixelPoolyTotalSupply, usePixelStoreRead } from '@/lib/blockchain'
+
 export default function Home() {
+  const contractStore = useContractAutoLoad('PixelStore')
+  const contractPooly = useContractAutoLoad('PixelPooly')
+
+  const { data: totalSupplyData } = usePixelPoolyTotalSupply({ address: contractPooly?.address })
+  const { data: totalETHData } = usePixelStoreRead({ address: contractStore?.address, functionName: 'totalReceived' })
+
   return (
     <>
       <section className="w-full py-20">
@@ -14,11 +25,11 @@ export default function Home() {
             <h3 className="text-lg font-normal">Season</h3>
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <span className="text-6xl font-bold">0</span>
+            <span className="text-6xl font-bold">{totalSupplyData?.toString()}</span>
             <h3 className="text-lg font-normal">Mints</h3>
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <span className="text-6xl font-bold">$0.00</span>
+            <span className="text-6xl font-bold">{ethers.utils.formatEther(totalETHData)} ETH</span>
             <h3 className="text-lg font-normal">Raised</h3>
           </div>
         </div>
