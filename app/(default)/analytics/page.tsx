@@ -1,8 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-
-import { BigNumber, ethers } from 'ethers'
+import { ethers } from 'ethers'
 
 import { useContractAutoLoad } from '@/hooks/use-contract-auto-load'
 import { usePixelPoolyTotalSupply, usePixelStoreRead } from '@/lib/blockchain'
@@ -11,22 +9,8 @@ export default function Home() {
   const contractStore = useContractAutoLoad('PixelStore')
   const contractPooly = useContractAutoLoad('PixelPooly')
 
-  const [totalSupply, setTotalSupply] = useState<BigNumber>()
-  const [totalETH, setTotalETH] = useState<BigNumber>()
-
   const { data: totalSupplyData, isSuccess: isSupplySuccess } = usePixelPoolyTotalSupply({ address: contractPooly?.address })
   const { data: totalETHData, isSuccess: isEthSuccess } = usePixelStoreRead({ address: contractStore?.address, functionName: 'totalReceived' })
-
-  useEffect(() => {
-    if (isEthSuccess && totalETHData) {
-      setTotalETH(totalETHData)
-    }
-    if (isSupplySuccess && totalSupplyData) {
-      setTotalSupply(totalSupplyData)
-    }
-  }, [totalETHData, totalSupplyData])
-
-  if (!isEthSuccess || !isSupplySuccess) return null
 
   return (
     <>
@@ -41,11 +25,11 @@ export default function Home() {
             <h3 className="text-lg font-normal">Season</h3>
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <span className="text-6xl font-bold">{totalSupply?.toString()}</span>
+            <span className="text-6xl font-bold">{totalSupplyData?.toString()}</span>
             <h3 className="text-lg font-normal">Mints</h3>
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <span className="text-6xl font-bold">{totalETH ? ethers.utils.formatEther(totalETH) : '...'} ETH</span>
+            <span className="text-6xl font-bold">{totalETHData ? ethers.utils.formatEther(totalETHData) : '...'} ETH</span>
             <h3 className="text-lg font-normal">Raised</h3>
           </div>
         </div>
