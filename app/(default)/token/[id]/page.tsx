@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 import { useAccount } from 'wagmi'
 
-import PixelPoolyInventory from '@/components/pixel-pooly-inventory'
+import PixelPoolyInventory from '@/components/inventory/pixel-pooly-inventory'
 import PixelPoolyTraitDescription from '@/components/pixel-pooly-trait-description'
 import PixelPoolyTraitLayerName from '@/components/pixel-pooly-trait-layer-name'
 import PixelPoolyTraitName from '@/components/pixel-pooly-trait-name'
@@ -91,7 +91,7 @@ export default function Home({ params }: any) {
       {account?.address == ownerData ? (
         <>
           <section className="container py-10 lg:py-16">
-            <PixelPoolyInventory />
+            <PixelPoolyInventory tokenId={params?.id} />
           </section>
           <section className="container py-10 lg:py-16">
             <PixelPoolyBuyAndEquipItems character={itemList} tokenId={params?.id} />
