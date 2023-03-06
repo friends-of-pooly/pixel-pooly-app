@@ -26,6 +26,8 @@ export default function Home() {
     }
   }, [totalETHData, totalSupplyData])
 
+  if (!isEthSuccess || !isSupplySuccess) return null
+
   return (
     <>
       <section className="w-full py-20">
