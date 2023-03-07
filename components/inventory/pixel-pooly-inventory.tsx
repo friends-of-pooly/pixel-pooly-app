@@ -20,8 +20,6 @@ export default function PixelPoolyInventory({ tokenId, character }: PixelPoolyIn
     args: [tokenId],
   })
 
-  console.log('unlockedTraitsData', unlockedTraitsData)
-
   return (
     <div className="rounded-md bg-neutral-100 p-10 text-center dark:bg-neutral-800">
       {unlockedTraitsData && unlockedTraitsData.length > 0 ? (
