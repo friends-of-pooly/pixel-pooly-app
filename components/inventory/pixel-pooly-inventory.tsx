@@ -6,9 +6,13 @@ import { usePixelPoolyStorageGetUnlockedTraits } from '@/lib/blockchain'
 
 interface PixelPoolyInventoryProps {
   tokenId: any
+  character: {
+    frame: number
+    layer: number
+  }[]
 }
 
-export default function PixelPoolyInventory({ tokenId }: PixelPoolyInventoryProps) {
+export default function PixelPoolyInventory({ tokenId, character }: PixelPoolyInventoryProps) {
   const contractStorage = useContractAutoLoad('PixelPoolyStorage')
 
   const { data: unlockedTraitsData } = usePixelPoolyStorageGetUnlockedTraits({
@@ -23,7 +27,7 @@ export default function PixelPoolyInventory({ tokenId }: PixelPoolyInventoryProp
       {unlockedTraitsData && unlockedTraitsData.length > 0 ? (
         <>
           <h3 className="mb-8 pb-2 text-3xl font-bold">Inventory</h3>
-          <PixelPoolyInventoryList ownedTraits={unlockedTraitsData} />
+          <PixelPoolyInventoryList character={character} ownedTraits={unlockedTraitsData} />
         </>
       ) : (
         <>

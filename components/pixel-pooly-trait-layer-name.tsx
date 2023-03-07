@@ -12,8 +12,8 @@ interface PixelPoolyTraitLayerNameProps {
 
 const names = [
   'Background',
-  'Left Wing',
   'Right Wing',
+  'Left Wing',
   'Body',
   'Body Accesory',
   'Head',

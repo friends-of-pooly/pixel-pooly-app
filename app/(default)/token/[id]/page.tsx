@@ -91,7 +91,7 @@ export default function Home({ params }: any) {
       {account?.address == ownerData ? (
         <>
           <section className="container py-10 lg:py-16">
-            <PixelPoolyInventory tokenId={params?.id} />
+            <PixelPoolyInventory character={itemList} tokenId={params?.id} />
           </section>
           <section className="container py-10 lg:py-16">
             <PixelPoolyBuyAndEquipItems character={itemList} tokenId={params?.id} />
