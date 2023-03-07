@@ -27,7 +27,7 @@ export default function PixelPoolyInventory({ tokenId, character }: PixelPoolyIn
       {unlockedTraitsData && unlockedTraitsData.length > 0 ? (
         <>
           <h3 className="mb-8 pb-2 text-3xl font-bold">Inventory</h3>
-          <PixelPoolyInventoryList character={character} ownedTraits={unlockedTraitsData} />
+          <PixelPoolyInventoryList tokenId={tokenId} character={character} ownedTraits={unlockedTraitsData} />
         </>
       ) : (
         <>
