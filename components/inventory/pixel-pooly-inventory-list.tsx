@@ -65,7 +65,7 @@ export const PixelPoolyInventoryList = ({ className, tokenId, ownedTraits, chara
               {isEquiped ? null : (
                 <PixelPoolyEquipTraitButton
                   tokenId={tokenId}
-                  className="btn-purple btn-pill bg-gradient-color btn-xl mt-5 w-full py-6 text-2xl"
+                  className="btn-purple btn-pill bg-gradient-color btn mt-5 w-full py-6 text-xl"
                   layer={item.layer}
                   frame={item.frame}
                 />
