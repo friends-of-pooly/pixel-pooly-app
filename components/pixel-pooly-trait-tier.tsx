@@ -28,6 +28,8 @@ export const PixelPoolyTraitTier = ({ className, layer, frame }: PixelPoolyTrait
   if (traitTier === 3) {
     return <span className={`${classes} tag tag-red`}>Legendary</span>
   }
+
+  return null
 }
 
 export default PixelPoolyTraitTier

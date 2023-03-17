@@ -12,15 +12,17 @@ interface PixelPoolyTraitLayerNameProps {
 
 const names = [
   'Background',
-  'Left Wing',
   'Right Wing',
+  'Left Wing',
   'Body',
-  'Body Accesory',
+  'Body Accessory',
   'Head',
-  'Head Accesory',
-  'Accesory Left',
-  'Accesory Right',
-  'Accesory Face',
+  'Head Accessory',
+  'Body Lower',
+  'Accessory Left',
+  'Accessory Right',
+  'Accessory Face',
+  'Wildcard',
 ]
 
 export const PixelPoolyTraitLayerName = ({ className, layer, frame }: PixelPoolyTraitLayerNameProps) => {
