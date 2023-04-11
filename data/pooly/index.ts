@@ -99,7 +99,7 @@ export const optionsBG = [
     tier: 0,
     layer: 0,
     frame: 7,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase White',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -780,7 +780,7 @@ export const optionsBody = [
     tier: 2,
     layer: 3,
     frame: 32,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Shirt',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -1369,7 +1369,7 @@ export const optionsHead = [
     tier: 1,
     layer: 5,
     frame: 20,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Eyes',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -1748,7 +1748,7 @@ export const optionsHeadAcc = [
     tier: 0,
     layer: 6,
     frame: 23,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Helmet',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -2041,7 +2041,7 @@ export const optionsLeftWingAcc = [
     tier: 1,
     layer: 8,
     frame: 18,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Briefcase',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -2061,7 +2061,7 @@ export const optionsLeftWingAcc = [
     tier: 3,
     layer: 8,
     frame: 19,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Shield',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -2358,7 +2358,7 @@ export const optionsRightWingAcc = [
     tier: 1,
     layer: 9,
     frame: 18,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Briefcase',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
@@ -2378,7 +2378,7 @@ export const optionsRightWingAcc = [
     tier: 3,
     layer: 9,
     frame: 19,
-    expiry: 1681822800,
+    expiry: 1682067600,
     traitName: 'Coinbase Shield',
     traitDescription: 'Are you based? Pooly is based',
     stats: [
