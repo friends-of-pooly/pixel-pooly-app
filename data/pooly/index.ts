@@ -95,6 +95,22 @@ export const optionsBG = [
     svg: '/pooly/grid/0-bg/bg_water.svg',
     croppedSVG: '/pooly/cropped/0-bg/bg_water.svg',
   },
+  {
+    tier: 0,
+    layer: 0,
+    frame: 7,
+    expiry: 1682067600,
+    traitName: 'Coinbase White',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'defense',
+        value: 1,
+      },
+    ],
+    svg: '/pooly/grid/0-bg/bg_coinbase_white.svg',
+    croppedSVG: '/pooly/cropped/0-bg/bg_coinbase_white.svg',
+  },
 ]
 
 export const optionsRight = [
@@ -760,6 +776,26 @@ export const optionsBody = [
     svg: '/pooly/grid/3-body/body_lobby3_white.svg',
     croppedSVG: '/pooly/cropped/3-body/body_lobby3_white.svg',
   },
+  {
+    tier: 2,
+    layer: 3,
+    frame: 32,
+    expiry: 1682067600,
+    traitName: 'Coinbase Shirt',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'defense',
+        value: 3,
+      },
+      {
+        categoryType: 'constitution',
+        value: 2,
+      },
+    ],
+    svg: '/pooly/grid/3-body/body_coinbase_blue.svg',
+    croppedSVG: '/pooly/cropped/3-body/body_coinbase_blue.svg',
+  },
 ]
 
 export const optionsBodyAcc = [
@@ -1329,6 +1365,26 @@ export const optionsHead = [
     svg: '/pooly/grid/5-head/head_wink.svg',
     croppedSVG: '/pooly/cropped/5-head/head_wink.svg',
   },
+  {
+    tier: 1,
+    layer: 5,
+    frame: 20,
+    expiry: 1682067600,
+    traitName: 'Coinbase Eyes',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'wisdom',
+        value: 1,
+      },
+      {
+        categoryType: 'charisma',
+        value: 2,
+      },
+    ],
+    svg: '/pooly/grid/5-head/head_coinbase_eyes.svg',
+    croppedSVG: '/pooly/cropped/5-head/head_coinbase_eyes.svg',
+  },
 ]
 
 export const optionsHeadAcc = [
@@ -1688,6 +1744,26 @@ export const optionsHeadAcc = [
     svg: '/pooly/grid/6-head_accessory/head_accessory_top_hat.svg',
     croppedSVG: '/pooly/cropped/6-head_accessory/head_accessory_top_hat.svg',
   },
+  {
+    tier: 0,
+    layer: 6,
+    frame: 23,
+    expiry: 1682067600,
+    traitName: 'Coinbase Helmet',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'strength',
+        value: 2,
+      },
+      {
+        categoryType: 'defense',
+        value: 2,
+      },
+    ],
+    svg: '/pooly/grid/6-head_accessory/head_accessory_coinbase_helmet.svg',
+    croppedSVG: '/pooly/cropped/6-head_accessory/head_accessory_coinbase_helmet.svg',
+  },
 ]
 
 export const optionsLeftWingAcc = [
@@ -1961,6 +2037,50 @@ export const optionsLeftWingAcc = [
     svg: '/pooly/grid/8-accessory_left/accessory_left_lobby3_briefcase.svg',
     croppedSVG: '/pooly/cropped/8-accessory_left/accessory_left_lobby3_briefcase.svg',
   },
+  {
+    tier: 1,
+    layer: 8,
+    frame: 18,
+    expiry: 1682067600,
+    traitName: 'Coinbase Briefcase',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'agility',
+        value: 2,
+      },
+      {
+        categoryType: 'charisma',
+        value: 2,
+      },
+    ],
+    svg: '/pooly/grid/8-accessory_left/accessory_left_coinbase_briefcase.svg',
+    croppedSVG: '/pooly/cropped/8-accessory_left/accessory_left_coinbase_briefcase.svg',
+  },
+  {
+    tier: 3,
+    layer: 8,
+    frame: 19,
+    expiry: 1682067600,
+    traitName: 'Coinbase Shield',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'defense',
+        value: 5,
+      },
+      {
+        categoryType: 'constitution',
+        value: 4,
+      },
+      {
+        categoryType: 'strength',
+        value: 3,
+      },
+    ],
+    svg: '/pooly/grid/8-accessory_left/accessory_left_coinbase_shield.svg',
+    croppedSVG: '/pooly/cropped/8-accessory_left/accessory_left_coinbase_shield.svg',
+  },
 ]
 
 export const optionsRightWingAcc = [
@@ -2233,6 +2353,50 @@ export const optionsRightWingAcc = [
     ],
     svg: '/pooly/grid/9-accessory_right/accessory_right_lobby3_briefcase.svg',
     croppedSVG: '/pooly/cropped/9-accessory_right/accessory_right_lobby3_briefcase.svg',
+  },
+  {
+    tier: 1,
+    layer: 9,
+    frame: 18,
+    expiry: 1682067600,
+    traitName: 'Coinbase Briefcase',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'agility',
+        value: 2,
+      },
+      {
+        categoryType: 'charisma',
+        value: 2,
+      },
+    ],
+    svg: '/pooly/grid/9-accessory_right/accessory_right_coinbase_briefcase.svg',
+    croppedSVG: '/pooly/cropped/9-accessory_right/accessory_right_coinbase_briefcase.svg',
+  },
+  {
+    tier: 3,
+    layer: 9,
+    frame: 19,
+    expiry: 1682067600,
+    traitName: 'Coinbase Shield',
+    traitDescription: 'Are you based? Pooly is based',
+    stats: [
+      {
+        categoryType: 'defense',
+        value: 5,
+      },
+      {
+        categoryType: 'constitution',
+        value: 4,
+      },
+      {
+        categoryType: 'strength',
+        value: 3,
+      },
+    ],
+    svg: '/pooly/grid/9-accessory_right/accessory_right_coinbase_shield.svg',
+    croppedSVG: '/pooly/cropped/9-accessory_right/accessory_right_coinbase_shield.svg',
   },
 ]
 
